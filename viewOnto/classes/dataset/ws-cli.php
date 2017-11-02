@@ -21,7 +21,9 @@ require_once 'connectors/DataRequest.class.php';
 
 $client = new jsonRPCClient("http://192.168.0.80/~mbeacco/macro_planning/viewOnto/classes/dataset/ws-serv.php", true);
 
-var_dump($client);
+echo '<pre>';
+print_r($client);
+echo '</pre>';
 
 
 /*********************************************************************************************************/

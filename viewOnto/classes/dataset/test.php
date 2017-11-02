@@ -23,25 +23,25 @@ foreach ($r as $ru) {
 	$resources[$ru['id']] = $dc->getAResource($ru['id']);
 	$i++;
 }
-$nbRes = 2;
-var_dump($resources);
+// $nbRes = 2;
+// var_dump($resources);
+
+echo '<pre>';
+var_dump($dc->getResources());
+echo '</pre>';
 
 
+// $result = TaskCalculator::calculateAverage($dev, TaskSelector::takeBestResourcesAverage($resources, 4));
+// print "<br>Division par l'efficacite moyenne des meilleurs developpeurs : ".$result/(24*60*60);
+// print "<br>D&eacute;but le ".date("Y-m-d", strtotime($dev["plannedStart"]));
+// print "<br>Dur&eacute;e : ".date("z", $result)." jours";
+// print "<br>Fin le ".date("Y-m-d", $result + strtotime($dev["plannedStart"]));
 
-
-
-
-$result = TaskCalculator::calculateAverage($dev, TaskSelector::takeBestResourcesAverage($resources, 4));
-print "<br>Division par l'efficacite moyenne des meilleurs developpeurs : ".$result/(24*60*60);
-print "<br>D&eacute;but le ".date("Y-m-d", strtotime($dev["plannedStart"]));
-print "<br>Dur&eacute;e : ".date("z", $result)." jours";
-print "<br>Fin le ".date("Y-m-d", $result + strtotime($dev["plannedStart"]));
-
-$result = TaskCalculator::calculateAverage($dev, TaskSelector::takeWorstResourcesAverage($resources, 6));
-print "<br><br>Division par l'efficacite moyenne des moins bons developpeurs : ".$result/(24*60*60);
-print "<br>D&eacute;but le ".date("Y-m-d", strtotime($dev["plannedStart"]));
-print "<br>Dur&eacute;e : ".date("z", $result)." jours";
-print "<br>Fin le ".date("Y-m-d", $result + strtotime($dev["plannedStart"]));
+// $result = TaskCalculator::calculateAverage($dev, TaskSelector::takeWorstResourcesAverage($resources, 6));
+// print "<br><br>Division par l'efficacite moyenne des moins bons developpeurs : ".$result/(24*60*60);
+// print "<br>D&eacute;but le ".date("Y-m-d", strtotime($dev["plannedStart"]));
+// print "<br>Dur&eacute;e : ".date("z", $result)." jours";
+// print "<br>Fin le ".date("Y-m-d", $result + strtotime($dev["plannedStart"]));
 
 
 
@@ -55,11 +55,11 @@ print "<br>Fin le ".date("Y-m-d", $result + strtotime($dev["plannedStart"]));
 $nbSkill = 2;
 $arraySkill = array("PHP", "Scrum");
 //var_dump(TaskSelector::takeWorstResourcesSkill($resources, 6, array("SQL")));
-$result = TaskCalculator::calculateWithSkillAverage($arraySkill, $dev, TaskSelector::takeBestResourcesSkill($resources, 4, $arraySkill));
-print "<br><br>Division par l'efficacite moyenne des competences en PHP et SQL des meilleurs developpeurs : ".$result/(24*60*60);
-print "<br>D&eacute;but le ".date("Y-m-d", strtotime($dev["plannedStart"]));
-print "<br>Dur&eacute;e : ".date("z", $result)." jours";
-print "<br>Fin le ".date("Y-m-d", $result + strtotime($dev["plannedStart"]));
+// $result = TaskCalculator::calculateWithSkillAverage($arraySkill, $dev, TaskSelector::takeBestResourcesSkill($resources, 4, $arraySkill));
+// print "<br><br>Division par l'efficacite moyenne des competences en PHP et SQL des meilleurs developpeurs : ".$result/(24*60*60);
+// print "<br>D&eacute;but le ".date("Y-m-d", strtotime($dev["plannedStart"]));
+// print "<br>Dur&eacute;e : ".date("z", $result)." jours";
+// print "<br>Fin le ".date("Y-m-d", $result + strtotime($dev["plannedStart"]));
 
 /*$result = TaskCalculator::calculateWithSkillAverage($arraySkill, $projet, $dev, TaskSelector::takeWorstResourcesSkill($resources, 4, $arraySkill));
 print "<br><br>Division par l'efficacite moyenne des competences en PHP et SQL des moins bons developpeurs : ".$result/(24*60*60);
