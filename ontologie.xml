@@ -1,0 +1,465 @@
+<?xml version="1.0"?>
+<rdf:RDF 
+	xmlns:pmbE="http://www.pmbservices.fr/Entity/" xmlns:pmbP="http://www.pmbservices.fr/Property/"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:xsd="https://www.w3.org/TR/xmlschema11-2/#">
+	
+	
+	
+	
+	<!-- /////////////////////////////////////////////////////////////////////////////////////// 
+		// // Entities // /////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+	<!-- pmbE:CustomerMind-->
+
+	<rdf:Description rdf:about="http://www.pmbservices.fr/Entity/CustomerMind">
+		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class" />
+		<rdfs:comment>It's the mind state of customer who has paied the project.</rdfs:comment>
+	</rdf:Description>
+
+
+	<!-- pmbE:Customer -->
+
+	<rdf:Description rdf:about="http://www.pmbservices.fr/Entity/Customer">
+		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class" />
+		<rdfs:comment>It's a customer. May be you, may be me.</rdfs:comment>
+	</rdf:Description>
+
+
+	<!-- pmbE:Skill -->
+
+	<rdf:Description rdf:about="http://www.pmbservices.fr/Entity/Skill">
+		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class" />
+		<rdfs:comment>All skill that are necessary for a development or know by a developer.</rdfs:comment>
+	</rdf:Description>
+
+
+	<!-- pmbE:Development -->
+
+	<rdf:Description rdf:about="http://www.pmbservices.fr/Entity/Development">
+		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class" />
+		<rdfs:comment>This is all developments to realize before thier ending date or even already finished.</rdfs:comment>
+	</rdf:Description>
+
+
+	<!-- pmbE:SkillEfficiency -->
+
+	<rdf:Description rdf:about="http://www.pmbservices.fr/Entity/SkillEfficiency">
+		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class" />
+		<rdfs:comment>It's the skill efficiency of a developer.</rdfs:comment>
+	</rdf:Description>
+
+
+	<!-- pmbE:MindState -->
+
+	<rdf:Description rdf:about="http://www.pmbservices.fr/Entity/MindState">
+		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class" />
+		<rdfs:comment>This is a weighted list of mind state that can be taken by a customer or by your developer team.</rdfs:comment>
+	</rdf:Description>
+
+
+	<!-- pmbE:Priority -->
+
+	<rdf:Description rdf:about="http://www.pmbservices.fr/Entity/Priority">
+		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class" />
+		<rdfs:comment>This is a weighted list of priorities for your developments and projects.</rdfs:comment>
+	</rdf:Description>
+
+
+	<!-- pmbE:Project -->
+
+	<rdf:Description rdf:about="http://www.pmbservices.fr/Entity/Project">
+		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class" />
+		<rdfs:comment>Oh my god ! You have found the project entity. Congratulation, your computer will burn in 5...4...3...2... Just kidding :P. </rdfs:comment>
+	</rdf:Description>
+
+
+	<!-- pmbE:Resource -->
+
+	<rdf:Description rdf:about="http://www.pmbservices.fr/Entity/Resource">
+		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class" />
+		<rdfs:comment>In this entity, we have all developers of your compagny.</rdfs:comment>
+	</rdf:Description>
+
+
+	<!-- pmbE:Holidays -->
+
+	<rdf:Description rdf:about="http://www.pmbservices.fr/Entity/Holidays">
+		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class" />
+		<rdfs:comment>This is for developers, when they're tired, they take some holidays. Don't forget that, a tired developer is a bad developer.</rdfs:comment>
+	</rdf:Description>
+	
+
+
+	<!-- /////////////////////////////////////////////////////////////////////////////////////// 
+		// // Object Properties // /////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+	<!-- pmbP:customer -->
+
+	<rdf:Description rdf:about="http://www.pmbservices.fr/Property/customer">
+		<rdfs:domain rdf:resource="http://www.pmbservices.fr/Entity/Project" />
+		<rdfs:domain rdf:resource="http://www.pmbservices.fr/Entity/CustomerMind" />
+		<rdfs:range rdf:resource="http://www.pmbservices.fr/Entity/CustomerMind" />
+		<rdfs:range rdf:resource="http://www.pmbservices.fr/Entity/Customer" />
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+		<rdfs:comment>An instance of Customer if we are in the CustomerMind entity, an instance of CustomerMind if we are in the Project entity.</rdfs:comment>
+	</rdf:Description>
+
+
+
+	<!-- pmbP:skill -->
+
+	<rdf:Description rdf:about="http://www.pmbservices.fr/Property/skill">
+		<rdfs:domain rdf:resource="http://www.pmbservices.fr/Entity/SkillEfficiency" />
+		<rdfs:range rdf:resource="http://www.pmbservices.fr/Entity/Skill" />
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+		<rdfs:comment>An instance of the Skill entity.</rdfs:comment>
+	</rdf:Description>
+
+
+
+	<!-- pmbP:parentSkill -->
+
+	<rdf:Description rdf:about="http://www.pmbservices.fr/Property/parentSkill">
+		<rdfs:domain rdf:resource="http://www.pmbservices.fr/Entity/Skill" />
+		<rdfs:range rdf:resource="http://www.pmbservices.fr/Entity/Skill" />
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+		<rdfs:comment>An instance of the Skill entity. But this is a parent skill.</rdfs:comment>
+	</rdf:Description>
+
+
+
+	<!-- pmbP:skillTag -->
+
+	<rdf:Description rdf:about="http://www.pmbservices.fr/Property/skillTag">
+		<rdfs:domain rdf:resource="http://www.pmbservices.fr/Entity/Development" />
+		<rdfs:range rdf:resource="http://www.pmbservices.fr/Entity/Skill" />
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+		<rdfs:comment>A skill tag on a development.</rdfs:comment>
+	</rdf:Description>
+
+
+
+	<!-- pmbP:development -->
+
+	<rdf:Description rdf:about="http://www.pmbservices.fr/Property/development">
+		<rdfs:domain rdf:resource="http://www.pmbservices.fr/Entity/Project" />
+		<rdfs:range rdf:resource="http://www.pmbservices.fr/Entity/Development" />
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+		<rdfs:comment>An instance of the Development entity.</rdfs:comment>
+	</rdf:Description>
+
+
+
+	<!-- pmbP:parentDevelopment -->
+
+	<rdf:Description rdf:about="http://www.pmbservices.fr/Property/parentDevelopment">
+		<rdfs:domain rdf:resource="http://www.pmbservices.fr/Entity/Development" />
+		<rdfs:range rdf:resource="http://www.pmbservices.fr/Entity/Development" />
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+		<rdfs:comment>A development entity instance if we have a parent development, null if not.</rdfs:comment>
+	</rdf:Description>
+
+
+
+	<!-- pmbP:previousDevelopment -->
+
+	<rdf:Description rdf:about="http://www.pmbservices.fr/Property/previousDevelopment">
+		<rdfs:domain rdf:resource="http://www.pmbservices.fr/Entity/Development" />
+		<rdfs:range rdf:resource="http://www.pmbservices.fr/Entity/Development" />
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+		<rdfs:comment>A development entity instance if we have a previous development, null if not.</rdfs:comment>
+	</rdf:Description>
+
+
+
+	<!-- pmbP:skillEfficiency -->
+
+	<rdf:Description rdf:about="http://www.pmbservices.fr/Property/skillEfficiency">
+		<rdfs:domain rdf:resource="http://www.pmbservices.fr/Entity/Resource" />
+		<rdfs:domain rdf:resource="http://www.pmbservices.fr/Entity/SkillEfficiency" />
+		<rdfs:range rdf:resource="http://www.pmbservices.fr/Entity/SkillEfficiency" />
+		<rdfs:Datatype rdf:resource="https://www.w3.org/TR/xmlschema11-2/#float" />
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+		<rdfs:comment>An instance of SkillEfficicency class. It's the efficiency of a resource on a specific skill.</rdfs:comment>
+	</rdf:Description>
+
+
+
+	<!-- pmbP:mindState -->
+
+	<rdf:Description rdf:about="http://www.pmbservices.fr/Property/mindState">
+		<rdfs:domain rdf:resource="http://www.pmbservices.fr/Entity/CustomerMind" />
+		<rdfs:range rdf:resource="http://www.pmbservices.fr/Entity/MindState" />
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+		<rdfs:comment>An instance of MindState class.</rdfs:comment>
+	</rdf:Description>
+	
+	
+	
+	<!-- pmbP:developersMind -->
+
+	<rdf:Description rdf:about="http://www.pmbservices.fr/Property/developersMind">
+		<rdfs:domain rdf:resource="http://www.pmbservices.fr/Entity/Project" />
+		<rdfs:range rdf:resource="http://www.pmbservices.fr/Entity/MindState" />
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+		<rdfs:comment>An instance of MindState class.</rdfs:comment>
+	</rdf:Description>
+
+
+
+	<!-- pmbP:resourceUnavailability -->
+
+	<rdf:Description rdf:about="http://www.pmbservices.fr/Property/resourceUnavailability">
+		<rdfs:domain rdf:resource="http://www.pmbservices.fr/Entity/Resource" />
+		<rdfs:range rdf:resource="http://www.pmbservices.fr/Entity/Holidays" />
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+		<rdfs:comment>Some developers need holidays to make good code.</rdfs:comment>
+	</rdf:Description>
+
+
+
+	<!-- pmbP:priority -->
+
+	<rdf:Description rdf:about="http://www.pmbservices.fr/Property/priority">
+		<rdfs:domain rdf:resource="http://www.pmbservices.fr/Entity/Development" />
+		<rdfs:domain rdf:resource="http://www.pmbservices.fr/Entity/Project" />
+		<rdfs:range rdf:resource="http://www.pmbservices.fr/Entity/Priority" />
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+		<rdfs:comment>An instance of Priority class.</rdfs:comment>
+	</rdf:Description>
+
+
+
+	<!-- pmbP:resource -->
+
+	<rdf:Description rdf:about="http://www.pmbservices.fr/Property/resource">
+		<rdfs:domain rdf:resource="http://www.pmbservices.fr/Entity/Development" />
+		<rdfs:range rdf:resource="http://www.pmbservices.fr/Entity/Resource" />
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+		<rdfs:comment>An instance of Resource class.</rdfs:comment>
+	</rdf:Description>
+
+
+
+	<!-- /////////////////////////////////////////////////////////////////////////////////////// 
+		// // Data properties // /////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+	<!-- pmbP:plannedStart -->
+
+	<rdf:Description rdf:about="http://www.pmbservices.fr/Property/plannedStarte">
+		<rdfs:domain rdf:resource="http://www.pmbservices.fr/Entity/Development" />
+		<rdfs:Datatype rdf:resource="https://www.w3.org/TR/xmlschema11-2/#date" />
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+		<rdfs:comment>It's the planned start of a development.</rdfs:comment>
+	</rdf:Description>
+
+
+
+	<!-- pmbP:realStart -->
+
+	<rdf:Description rdf:about="http://www.pmbservices.fr/Property/realStart">
+		<rdfs:domain rdf:resource="http://www.pmbservices.fr/Entity/Development" />
+		<rdfs:Datatype rdf:resource="https://www.w3.org/TR/xmlschema11-2/#date" />
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+		<rdfs:comment>It's the real start of a development.</rdfs:comment>
+	</rdf:Description>
+
+
+
+	<!-- pmbP:lateStart -->
+
+	<rdf:Description rdf:about="http://www.pmbservices.fr/Property/lateStart">
+		<rdfs:domain rdf:resource="http://www.pmbservices.fr/Entity/Development" />
+		<rdfs:Datatype rdf:resource="https://www.w3.org/TR/xmlschema11-2/#date" />
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+		<rdfs:comment>It's the latest start for a development.</rdfs:comment>
+	</rdf:Description>
+
+
+
+	<!-- pmbP:earlyStart -->
+
+	<rdf:Description rdf:about="http://www.pmbservices.fr/Property/earlyStart">
+		<rdfs:domain rdf:resource="http://www.pmbservices.fr/Entity/Development" />
+		<rdfs:Datatype rdf:resource="https://www.w3.org/TR/xmlschema11-2/#date" />
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+		<rdfs:comment>It's the earliest start for a development</rdfs:comment>
+	</rdf:Description>
+
+
+
+	<!-- pmbP:holidaysStart -->
+
+	<rdf:Description rdf:about="http://www.pmbservices.fr/Property/holidaysStart">
+		<rdfs:domain rdf:resource="http://www.pmbservices.fr/Entity/Holidays" />
+		<rdfs:Datatype rdf:resource="https://www.w3.org/TR/xmlschema11-2/#date" />
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+		<rdfs:comment>Il s'agit de la date de depart en vacances de la ressource</rdfs:comment>
+	</rdf:Description>
+
+
+
+	<!-- pmbP:optionalDevelopment -->
+
+	<rdf:Description rdf:about="http://www.pmbservices.fr/Property/optionalDevelopment">
+		<rdfs:domain rdf:resource="http://www.pmbservices.fr/Entity/Development" />
+		<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal" />
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+		<rdfs:comment>Est marque true dans le cas ou le developpement est optionnel, false par defaut</rdfs:comment>
+	</rdf:Description>
+
+
+
+	<!-- pmbP:duration -->
+
+	<rdf:Description rdf:about="http://www.pmbservices.fr/Property/duration">
+		<rdfs:domain rdf:resource="http://www.pmbservices.fr/Entity/Development" />
+		<rdfs:Datatype rdf:resource="https://www.w3.org/TR/xmlschema11-2/#float" />
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+		<rdfs:comment>Il s'agit de la duree effective du projet en jours</rdfs:comment>
+	</rdf:Description>
+
+
+
+	<!-- pmbP:baseEfficiency -->
+
+	<rdf:Description rdf:about="http://www.pmbservices.fr/Property/baseEfficiency">
+		<rdfs:domain rdf:resource="http://www.pmbservices.fr/Entity/Resource" />
+		<rdfs:Datatype rdf:resource="https://www.w3.org/TR/xmlschema11-2/#float" />
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+		<rdfs:comment>C'est l'efficacite de base d'une ressource</rdfs:comment>
+	</rdf:Description>
+
+
+
+	<!-- pmbP:effort -->
+
+	<rdf:Description rdf:about="http://www.pmbservices.fr/Property/effort">
+		<rdfs:domain rdf:resource="http://www.pmbservices.fr/Entity/Development" />
+		<rdfs:Datatype rdf:resource="https://www.w3.org/TR/xmlschema11-2/#float" />
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+		<rdfs:comment>C'est l'effort total necessaire au developpement en homme/jour</rdfs:comment>
+	</rdf:Description>
+
+
+
+	<!-- pmbP:plannedEnd -->
+
+	<rdf:Description rdf:about="http://www.pmbservices.fr/Property/plannedEnd">
+		<rdfs:domain rdf:resource="http://www.pmbservices.fr/Entity/Development" />
+		<rdfs:Datatype rdf:resource="https://www.w3.org/TR/xmlschema11-2/#date" />
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+		<rdfs:comment>Il s'agit de la date plannifiee de fin du developpement</rdfs:comment>
+	</rdf:Description>
+
+
+
+	<!-- pmbP:realEnd -->
+
+	<rdf:Description rdf:about="http://www.pmbservices.fr/Property/realEnd">
+		<rdfs:domain rdf:resource="http://www.pmbservices.fr/Entity/Development" />
+		<rdfs:Datatype rdf:resource="https://www.w3.org/TR/xmlschema11-2/#date" />
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+		<rdfs:comment>Il s'agit de la date reelle de fin du developpement</rdfs:comment>
+	</rdf:Description>
+
+
+
+	<!-- pmbP:lateEnd -->
+
+	<rdf:Description rdf:about="http://www.pmbservices.fr/Property/lateEnd">
+		<rdfs:domain rdf:resource="http://www.pmbservices.fr/Entity/Development" />
+		<rdfs:Datatype rdf:resource="https://www.w3.org/TR/xmlschema11-2/#date" />
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+		<rdfs:comment>Il s'agit de la date au plus tard de fin du developpement</rdfs:comment>
+	</rdf:Description>
+
+
+
+	<!-- pmbP:earlyEnd -->
+
+	<rdf:Description rdf:about="http://www.pmbservices.fr/Property/earlyEnd">
+		<rdfs:domain rdf:resource="http://www.pmbservices.fr/Entity/Development" />
+		<rdfs:Datatype rdf:resource="https://www.w3.org/TR/xmlschema11-2/#date" />
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+		<rdfs:comment>Il s'agit de la date au plus tot de fin du developpement</rdfs:comment>
+	</rdf:Description>
+
+
+
+	<!-- pmbP:holidaysEnd -->
+
+	<rdf:Description rdf:about="http://www.pmbservices.fr/Property/holidaysEnd">
+		<rdfs:domain rdf:resource="http://www.pmbservices.fr/Entity/Holidays" />
+		<rdfs:Datatype rdf:resource="https://www.w3.org/TR/xmlschema11-2/#date" />
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+		<rdfs:comment>Il s'agit de la date de retour de vacances de la ressource (La ressource peut etre de mauvaise humeur a son retour)</rdfs:comment>
+	</rdf:Description>
+
+
+
+	<!-- pmbP:holidaysReason -->
+
+	<rdf:Description rdf:about="http://www.pmbservices.fr/Property/holidaysReason">
+		<rdfs:domain rdf:resource="http://www.pmbservices.fr/Entity/Holidays" />
+		<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal" />
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+		<rdfs:comment>Contient le motif des vacances</rdfs:comment>
+	</rdf:Description>
+
+
+
+	<!-- pmbP:name -->
+
+	<rdf:Description rdf:about="http://www.pmbservices.fr/Property/name">
+		<rdfs:domain rdf:resource="http://www.pmbservices.fr/Entity/Customer" />
+		<rdfs:domain rdf:resource="http://www.pmbservices.fr/Entity/Resource" />
+		<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal" />
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+		<rdfs:comment>It's a name. I don't know for who, may be a work resource or a customer.</rdfs:comment>
+	</rdf:Description>
+
+
+
+	<!-- pmbP:firstname -->
+
+	<rdf:Description rdf:about="http://www.pmbservices.fr/Property/firstname">
+		<rdfs:domain rdf:resource="http://www.pmbservices.fr/Entity/Customer" />
+		<rdfs:domain rdf:resource="http://www.pmbservices.fr/Entity/Resource" />
+		<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal" />
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+		<rdfs:comment>It's a firstname. I don't know for who, may be a work resource or a customer.</rdfs:comment>
+	</rdf:Description>
+
+
+
+	<!-- pmbP:status -->
+
+	<rdf:Description rdf:about="http://www.pmbservices.fr/Property/status">
+		<rdfs:domain rdf:resource="http://www.pmbservices.fr/Entity/Development" />
+		<rdfs:Datatype rdf:resource="https://www.w3.org/TR/xmlschema11-2/#float" />
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+		<rdfs:comment>It's the advancement status of a development.</rdfs:comment>
+	</rdf:Description>
+
+
+
+	<!-- pmbP:weight -->
+
+	<rdf:Description rdf:about="http://www.pmbservices.fr/Property/weight">
+		<rdfs:domain rdf:resource="http://www.pmbservices.fr/Entity/Priority" />
+		<rdfs:domain rdf:resource="http://www.pmbservices.fr/Entity/MindState" />
+		<rdfs:Datatype rdf:resource="https://www.w3.org/TR/xmlschema11-2/#float" />
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+		<rdfs:comment>It's the weight of a priority of a mind state.</rdfs:comment>
+	</rdf:Description>
+
+</rdf:RDF>

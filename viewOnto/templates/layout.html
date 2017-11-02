@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{% block title %}Ontologie{% endblock %}</title>
+		<meta charset="utf-8" />
+		<style type="text/css">
+			a {
+				color: darkblue;
+				text-decoration: none;
+			}
+			
+			div {
+				display: inline-block;
+				vertical-align: top;
+				margin-right: 100px;
+			}
+		</style>
+	</head>
+
+	<body style="font-family: Helvetica, sans-serif;">
+		<h1>Ontologie du plan Macron-planning</h1>
+		<div style="width: 215px">
+			<h2>Arborescence</h2>
+			{% block tree %}
+			<ul style="list-style-type: none; padding-left: 10px;">
+				{% for entityTree in Tree %}
+				<li><a href="?type=Entity&amp;value={{entityTree.nom}}">{{entityTree.nom}}</a></li>
+					{% for propertyTree in entityTree.propertyList %}
+					<li style="margin-left: 20px;">- <a href="?type=Property&amp;value={{propertyTree.nom}}">{{propertyTree.nom}}</a></li>
+					{% endfor %}
+				{% endfor %}
+			</ul>
+			{% endblock %}
+		</div>
+		<div style="width: 750px">
+		{% block content %}{% endblock %}
+		{% block data %}{% endblock %}
+		<br>
+		
+		{% block trol %}
+			<!-- img style="" alt="Nicolas Cage" src="../../draft/nico.gif"><br -->
+			<!-- iframe src="http://lesjoiesducode.fr/post/114488558821/tout-d%C3%A9veloppeur-qui-se-respecte-conna%C3%AEt-ce" width="550px" height="525px"></iframe -->
+			<!-- iframe src="http://lesjoiesducode.fr/post/47525132894/quand-le-chef-mexplique-quon-prend-un-serveur" width="550px" height="525px"></iframe -->
+			<img alt="Oh putain, CA MARCHE !!!" src="../../draft/ca_marche.png">
+			<br>
+		{% endblock %}
+		</div>
+		
+	</body>
+</html>

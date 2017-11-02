@@ -1,0 +1,42 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+	<h2>Entit&eacute; : {{Entity.nom | default "Pas de nom connu"}}</h2>
+	<cite>Description de l'entit&eacute; : {{Entity.description | default "Pas de description connue"}}</cite><br><br>
+	Liste de ses propri&eacute;t&eacute;s :
+	<ul>
+		{% for property in Entity.propertyList %}
+			<li><a href="?type=Property&amp;value={{property.nom}}">{{property.nom}}</a></li>
+		{% endfor %}
+	</ul>
+	<a href="./">Retour à index</a>
+	<br>
+	{% if Entity.nom == "EtatEsprit" %}
+		<a href="?dataset=true&amp;value=Spirit">Jeu de donn&eacute;es</a>
+	{% else %}
+		{% if Entity.nom == "AvoirEtatEspritCli" %}
+			
+		{% else %}
+			{% if Entity.nom == "EfficaciteCompRes" %}
+				
+			{% else %}
+				{% if Entity.nom == "Vacances" %}
+					
+				{% else %}
+					<a href="?dataset=true&amp;type=Entity&amp;value={{Entity.nom}}">Jeu de donn&eacute;es</a>
+				{% endif %}
+			{% endif %}
+		{% endif %}
+	{% endif %}
+	
+
+{% endblock %}
+
+{% block data %}
+	{% if data.state == "true" %}
+		{{data.state}}
+	{% endif %}
+{% endblock %}
+
+{% block trol %}
+{% endblock %}

@@ -1,0 +1,678 @@
+DELETE FROM <http://www.pmbservices.fr/Dataset/>
+
+INSERT INTO <http://www.pmbservices.fr/Dataset/> {
+	<http://www.pmbservices.fr/Dataset/#ARenou> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Resource> .
+	<http://www.pmbservices.fr/Dataset/#ARenou> <http://www.pmbservices.fr/Property/name> "RENOU" .
+	<http://www.pmbservices.fr/Dataset/#ARenou> <http://www.pmbservices.fr/Property/firstname> "Arnaud" .
+	<http://www.pmbservices.fr/Dataset/#ARenou> <http://www.pmbservices.fr/Property/baseEfficiency> 0.9 .
+	<http://www.pmbservices.fr/Dataset/#ARenou> <http://www.pmbservices.fr/Property/resourceUnavailability> <http://www.pmbservices.fr/Dataset/#VacARenou.1> .
+	<http://www.pmbservices.fr/Dataset/#ARenou> <http://www.pmbservices.fr/Property/resourceUnavailability> <http://www.pmbservices.fr/Dataset/#VacARenou.2> .
+	<http://www.pmbservices.fr/Dataset/#ARenou> <http://www.pmbservices.fr/Property/skillEfficiency> <http://www.pmbservices.fr/Dataset/#PhpARenou> .
+	<http://www.pmbservices.fr/Dataset/#ARenou> <http://www.pmbservices.fr/Property/skillEfficiency> <http://www.pmbservices.fr/Dataset/#SqlARenou> .
+	<http://www.pmbservices.fr/Dataset/#ARenou> <http://www.pmbservices.fr/Property/skillEfficiency> <http://www.pmbservices.fr/Dataset/#SparqlARenou> .
+	
+	<http://www.pmbservices.fr/Dataset/#APetithomme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Resource> .
+	<http://www.pmbservices.fr/Dataset/#APetithomme> <http://www.pmbservices.fr/Property/name> "PETITHOMME" .
+	<http://www.pmbservices.fr/Dataset/#APetithomme> <http://www.pmbservices.fr/Property/firstname> "Alexis" .
+	<http://www.pmbservices.fr/Dataset/#APetithomme> <http://www.pmbservices.fr/Property/baseEfficiency> 0.85 .
+	<http://www.pmbservices.fr/Dataset/#APetithomme> <http://www.pmbservices.fr/Property/resourceUnavailability> <http://www.pmbservices.fr/Dataset/#VacAPetithomme.1> .
+	<http://www.pmbservices.fr/Dataset/#APetithomme> <http://www.pmbservices.fr/Property/skillEfficiency> <http://www.pmbservices.fr/Dataset/#PhpAPetithomme> .
+	<http://www.pmbservices.fr/Dataset/#APetithomme> <http://www.pmbservices.fr/Property/skillEfficiency> <http://www.pmbservices.fr/Dataset/#ScrumAPetithomme> .
+	<http://www.pmbservices.fr/Dataset/#APetithomme> <http://www.pmbservices.fr/Property/skillEfficiency> <http://www.pmbservices.fr/Dataset/#SqlAPetithomme> .
+	
+	<http://www.pmbservices.fr/Dataset/#DGoron> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Resource> .
+	<http://www.pmbservices.fr/Dataset/#DGoron> <http://www.pmbservices.fr/Property/name> "GORON" .
+	<http://www.pmbservices.fr/Dataset/#DGoron> <http://www.pmbservices.fr/Property/firstname> "Dimitri" .
+	<http://www.pmbservices.fr/Dataset/#DGoron> <http://www.pmbservices.fr/Property/baseEfficiency> 0.80 .
+	<http://www.pmbservices.fr/Dataset/#DGoron> <http://www.pmbservices.fr/Property/skillEfficiency> <http://www.pmbservices.fr/Dataset/#PhpDGoron> .
+	<http://www.pmbservices.fr/Dataset/#DGoron> <http://www.pmbservices.fr/Property/skillEfficiency> <http://www.pmbservices.fr/Dataset/#SqlDGoron> .
+	
+	<http://www.pmbservices.fr/Dataset/#VTouchard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Resource> .
+	<http://www.pmbservices.fr/Dataset/#VTouchard> <http://www.pmbservices.fr/Property/name> "TOUCHARD" .
+	<http://www.pmbservices.fr/Dataset/#VTouchard> <http://www.pmbservices.fr/Property/firstname> "Vivien" .
+	<http://www.pmbservices.fr/Dataset/#VTouchard> <http://www.pmbservices.fr/Property/baseEfficiency> 0.75 .
+	<http://www.pmbservices.fr/Dataset/#VTouchard> <http://www.pmbservices.fr/Property/skillEfficiency> <http://www.pmbservices.fr/Dataset/#PhpVTouchard> .
+	<http://www.pmbservices.fr/Dataset/#VTouchard> <http://www.pmbservices.fr/Property/skillEfficiency> <http://www.pmbservices.fr/Dataset/#SqlVTouchard> .
+	<http://www.pmbservices.fr/Dataset/#VTouchard> <http://www.pmbservices.fr/Property/skillEfficiency> <http://www.pmbservices.fr/Dataset/#SparqlVTouchard> .
+	
+	<http://www.pmbservices.fr/Dataset/#TSamson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Resource> .
+	<http://www.pmbservices.fr/Dataset/#TSamson> <http://www.pmbservices.fr/Property/name> "SAMSON" .
+	<http://www.pmbservices.fr/Dataset/#TSamson> <http://www.pmbservices.fr/Property/firstname> "Thomas" .
+	<http://www.pmbservices.fr/Dataset/#TSamson> <http://www.pmbservices.fr/Property/baseEfficiency> 0.75 .
+	<http://www.pmbservices.fr/Dataset/#TSamson> <http://www.pmbservices.fr/Property/skillEfficiency> <http://www.pmbservices.fr/Dataset/#PhpTSamson> .
+	<http://www.pmbservices.fr/Dataset/#TSamson> <http://www.pmbservices.fr/Property/skillEfficiency> <http://www.pmbservices.fr/Dataset/#SqlTSamson> .
+	
+	<http://www.pmbservices.fr/Dataset/#NGantier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Resource> .
+	<http://www.pmbservices.fr/Dataset/#NGantier> <http://www.pmbservices.fr/Property/name> "GANTIER" .
+	<http://www.pmbservices.fr/Dataset/#NGantier> <http://www.pmbservices.fr/Property/firstname> "Nicolas" .
+	<http://www.pmbservices.fr/Dataset/#NGantier> <http://www.pmbservices.fr/Property/baseEfficiency> 0.70 .
+	<http://www.pmbservices.fr/Dataset/#NGantier> <http://www.pmbservices.fr/Property/skillEfficiency> <http://www.pmbservices.fr/Dataset/#PhpNGantier> .
+	<http://www.pmbservices.fr/Dataset/#NGantier> <http://www.pmbservices.fr/Property/skillEfficiency> <http://www.pmbservices.fr/Dataset/#SqlNGantier> .
+	
+	
+	
+	
+	<http://www.pmbservices.fr/Dataset/#PrioTresHaute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Priority> .
+	<http://www.pmbservices.fr/Dataset/#PrioTresHaute> <http://www.w3.org/2000/01/rdf-schema#label> "Très haute" .
+	<http://www.pmbservices.fr/Dataset/#PrioTresHaute> <http://www.pmbservices.fr/Property/weight> "1.5" .
+	
+	<http://www.pmbservices.fr/Dataset/#PrioHaute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Priority> .
+	<http://www.pmbservices.fr/Dataset/#PrioHaute> <http://www.w3.org/2000/01/rdf-schema#label> "Haute" .
+	<http://www.pmbservices.fr/Dataset/#PrioHaute> <http://www.pmbservices.fr/Property/weight> "1.25" .
+	
+	<http://www.pmbservices.fr/Dataset/#PrioNormale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Priority> .
+	<http://www.pmbservices.fr/Dataset/#PrioNormale> <http://www.w3.org/2000/01/rdf-schema#label> "Normale" .
+	<http://www.pmbservices.fr/Dataset/#PrioNormale> <http://www.pmbservices.fr/Property/weight> "1" .
+	
+	<http://www.pmbservices.fr/Dataset/#PrioBasse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Priority> .
+	<http://www.pmbservices.fr/Dataset/#PrioBasse> <http://www.w3.org/2000/01/rdf-schema#label> "Basse" .
+	<http://www.pmbservices.fr/Dataset/#PrioBasse> <http://www.pmbservices.fr/Property/weight> "0.75" .
+	
+	<http://www.pmbservices.fr/Dataset/#PrioTresBasse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Priority> .
+	<http://www.pmbservices.fr/Dataset/#PrioTresBasse> <http://www.w3.org/2000/01/rdf-schema#label> "Très basse" .
+	<http://www.pmbservices.fr/Dataset/#PrioTresBasse> <http://www.pmbservices.fr/Property/weight> "0.5" .
+	
+	
+	
+	
+	<http://www.pmbservices.fr/Dataset/#Exce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/MindState> .
+	<http://www.pmbservices.fr/Dataset/#Exce> <http://www.w3.org/2000/01/rdf-schema#label> "Excellent" .
+	<http://www.pmbservices.fr/Dataset/#Exce> <http://www.pmbservices.fr/Property/weight> "1.75" .
+	
+	<http://www.pmbservices.fr/Dataset/#TBon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/MindState> .
+	<http://www.pmbservices.fr/Dataset/#TBon> <http://www.w3.org/2000/01/rdf-schema#label> "Très bon" .
+	<http://www.pmbservices.fr/Dataset/#TBon> <http://www.pmbservices.fr/Property/weight> "1.5" .
+	
+	<http://www.pmbservices.fr/Dataset/#Bon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/MindState> .
+	<http://www.pmbservices.fr/Dataset/#Bon> <http://www.w3.org/2000/01/rdf-schema#label> "Bon" .
+	<http://www.pmbservices.fr/Dataset/#Bon> <http://www.pmbservices.fr/Property/weight> "1.25" .
+	
+	<http://www.pmbservices.fr/Dataset/#Moy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/MindState> .
+	<http://www.pmbservices.fr/Dataset/#Moy> <http://www.w3.org/2000/01/rdf-schema#label> "Moyen" .
+	<http://www.pmbservices.fr/Dataset/#Moy> <http://www.pmbservices.fr/Property/weight> "1" .
+	
+	<http://www.pmbservices.fr/Dataset/#Mauv> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/MindState> .
+	<http://www.pmbservices.fr/Dataset/#Mauv> <http://www.w3.org/2000/01/rdf-schema#label> "Mauvais" .
+	<http://www.pmbservices.fr/Dataset/#Mauv> <http://www.pmbservices.fr/Property/weight> "0.75" .
+	
+	<http://www.pmbservices.fr/Dataset/#TMauv> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/MindState> .
+	<http://www.pmbservices.fr/Dataset/#TMauv> <http://www.w3.org/2000/01/rdf-schema#label> "Très mauvais" .
+	<http://www.pmbservices.fr/Dataset/#TMauv> <http://www.pmbservices.fr/Property/weight> "0.5" .
+	
+	<http://www.pmbservices.fr/Dataset/#Cata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/MindState> .
+	<http://www.pmbservices.fr/Dataset/#Cata> <http://www.w3.org/2000/01/rdf-schema#label> "Catastrophique" .
+	<http://www.pmbservices.fr/Dataset/#Cata> <http://www.pmbservices.fr/Property/weight> "0.25" .
+	
+	
+	
+	<http://www.pmbservices.fr/Dataset/#PHP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Skill> .
+	<http://www.pmbservices.fr/Dataset/#PHP> <http://www.w3.org/2000/01/rdf-schema#label> "Pé Hache Pé" .
+	
+	<http://www.pmbservices.fr/Dataset/#PHPObjet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Skill> .
+	<http://www.pmbservices.fr/Dataset/#PHPObjet> <http://www.w3.org/2000/01/rdf-schema#label> "PHP Objet (AKA le nouveau PMB)" .
+	<http://www.pmbservices.fr/Dataset/#PHPObjet> <http://www.pmbservices.fr/Property/parentSkill> <http://www.pmbservices.fr/Dataset/#PHP> .
+	
+	<http://www.pmbservices.fr/Dataset/#PHPProcedural> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Skill> .
+	<http://www.pmbservices.fr/Dataset/#PHPProcedural> <http://www.w3.org/2000/01/rdf-schema#label> "PHP Procédural (AKA le vieux PMB)" .
+	<http://www.pmbservices.fr/Dataset/#PHPProcedural> <http://www.pmbservices.fr/Property/parentSkill> <http://www.pmbservices.fr/Dataset/#PHP> .
+	
+	<http://www.pmbservices.fr/Dataset/#HTML> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Skill> .
+	<http://www.pmbservices.fr/Dataset/#HTML> <http://www.w3.org/2000/01/rdf-schema#label> "Hache Té Aime Elle" .
+	
+	<http://www.pmbservices.fr/Dataset/#JavaScript> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Skill> .
+	<http://www.pmbservices.fr/Dataset/#JavaScript> <http://www.w3.org/2000/01/rdf-schema#label> "JavaScript" .
+	
+	<http://www.pmbservices.fr/Dataset/#Java> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Skill> .
+	<http://www.pmbservices.fr/Dataset/#Java> <http://www.w3.org/2000/01/rdf-schema#label> "Java (AKA point point point point point point point point ...)" .
+	
+	<http://www.pmbservices.fr/Dataset/#Dojo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Skill> .
+	<http://www.pmbservices.fr/Dataset/#Dojo> <http://www.w3.org/2000/01/rdf-schema#label> "Dojo (AKA endroit pour faire du judo)" .
+	<http://www.pmbservices.fr/Dataset/#Dojo> <http://www.pmbservices.fr/Property/parentSkill> <http://www.pmbservices.fr/Dataset/#JavaScript> .
+	
+	<http://www.pmbservices.fr/Dataset/#JQuery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Skill> .
+	<http://www.pmbservices.fr/Dataset/#JQuery> <http://www.w3.org/2000/01/rdf-schema#label> "JQuery" .
+	<http://www.pmbservices.fr/Dataset/#JQuery> <http://www.pmbservices.fr/Property/parentSkill> <http://www.pmbservices.fr/Dataset/#JavaScript> .
+	
+	<http://www.pmbservices.fr/Dataset/#Vue.js> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Skill> .
+	<http://www.pmbservices.fr/Dataset/#Vue.js> <http://www.w3.org/2000/01/rdf-schema#label> "Vue.js (c'est le nom de la bibliothèque, ce n'est pas qu'un seul fichier t'as cru quoi ?)" .
+	<http://www.pmbservices.fr/Dataset/#Vue.js> <http://www.pmbservices.fr/Property/parentSkill> <http://www.pmbservices.fr/Dataset/#JavaScript> .
+	
+	<http://www.pmbservices.fr/Dataset/#AngularJS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Skill> .
+	<http://www.pmbservices.fr/Dataset/#AngularJS> <http://www.w3.org/2000/01/rdf-schema#label> "AngularJS (AKA le javascript by Google)" .
+	<http://www.pmbservices.fr/Dataset/#AngularJS> <http://www.pmbservices.fr/Property/parentSkill> <http://www.pmbservices.fr/Dataset/#JavaScript> .
+	
+	<http://www.pmbservices.fr/Dataset/#nodeJS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Skill> .
+	<http://www.pmbservices.fr/Dataset/#nodeJS> <http://www.w3.org/2000/01/rdf-schema#label> "Node JS (AKA le javascript côté serveur)" .
+	<http://www.pmbservices.fr/Dataset/#nodeJS> <http://www.pmbservices.fr/Property/parentSkill> <http://www.pmbservices.fr/Dataset/#JavaScript> .
+	
+	<http://www.pmbservices.fr/Dataset/#Django> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Skill> .
+	<http://www.pmbservices.fr/Dataset/#Django> <http://www.w3.org/2000/01/rdf-schema#label> "H2O - Django (C'est un petit framework mais il fait pas que le café if you know what I mean)" .
+	
+	<http://www.pmbservices.fr/Dataset/#Scrum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Skill> .
+	<http://www.pmbservices.fr/Dataset/#Scrum> <http://www.w3.org/2000/01/rdf-schema#label> "Scrum (AKA Ô Grand Maître Alexis)" .
+	
+	<http://www.pmbservices.fr/Dataset/#SQL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Skill> .
+	<http://www.pmbservices.fr/Dataset/#SQL> <http://www.w3.org/2000/01/rdf-schema#label> "Du SQL (Oracle on t'aime)" .
+	
+	<http://www.pmbservices.fr/Dataset/#SPARQL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Skill> .
+	<http://www.pmbservices.fr/Dataset/#SPARQL> <http://www.w3.org/2000/01/rdf-schema#label> "SPAAAAARQL parce que c'est Mantic (sémantique)" .
+	
+	
+	
+	
+	<http://www.pmbservices.fr/Dataset/#CairnCus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Customer> .
+	<http://www.pmbservices.fr/Dataset/#CairnCus> <http://www.pmbservices.fr/Property/name> "CAIRN" .
+	<http://www.pmbservices.fr/Dataset/#CairnCus> <http://www.pmbservices.fr/Property/firstname> "CAIRN" .
+	
+	<http://www.pmbservices.fr/Dataset/#IIMCus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Customer> .
+	<http://www.pmbservices.fr/Dataset/#IIMCus> <http://www.pmbservices.fr/Property/name> "IIM" .
+	<http://www.pmbservices.fr/Dataset/#IIMCus> <http://www.pmbservices.fr/Property/firstname> "IIM" .
+	
+	<http://www.pmbservices.fr/Dataset/#RadioFranceCus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Customer> .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceCus> <http://www.pmbservices.fr/Property/name> "RadioFrance" .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceCus> <http://www.pmbservices.fr/Property/firstname> "RadioFrance" .
+	
+	<http://www.pmbservices.fr/Dataset/#RAMEAUCus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Customer> .
+	<http://www.pmbservices.fr/Dataset/#RAMEAUCus> <http://www.pmbservices.fr/Property/name> "RAMEAU" .
+	<http://www.pmbservices.fr/Dataset/#RAMEAUCus> <http://www.pmbservices.fr/Property/firstname> "RAMEAU" .
+	
+	<http://www.pmbservices.fr/Dataset/#ArteVODCus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Customer> .
+	<http://www.pmbservices.fr/Dataset/#ArteVODCus> <http://www.pmbservices.fr/Property/name> "ArteVOD" .
+	<http://www.pmbservices.fr/Dataset/#ArteVODCus> <http://www.pmbservices.fr/Property/firstname> "ArteVOD" .
+	
+	<http://www.pmbservices.fr/Dataset/#NumilogCus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Customer> .
+	<http://www.pmbservices.fr/Dataset/#NumilogCus> <http://www.pmbservices.fr/Property/name> "Numilog" .
+	<http://www.pmbservices.fr/Dataset/#NumilogCus> <http://www.pmbservices.fr/Property/firstname> "Numilog" .
+	
+	<http://www.pmbservices.fr/Dataset/#ReimsCus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Customer> .
+	<http://www.pmbservices.fr/Dataset/#ReimsCus> <http://www.pmbservices.fr/Property/name> "Reims Métropole" .
+	<http://www.pmbservices.fr/Dataset/#ReimsCus> <http://www.pmbservices.fr/Property/firstname> "Reims Métropole" .
+	
+	<http://www.pmbservices.fr/Dataset/#DefaultCus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Customer> .
+	<http://www.pmbservices.fr/Dataset/#DefaultCus> <http://www.pmbservices.fr/Property/name> "Plop" .
+	<http://www.pmbservices.fr/Dataset/#DefaultCus> <http://www.pmbservices.fr/Property/firstname> "Blob" .
+	
+	<http://www.pmbservices.fr/Dataset/#PMBCus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Customer> .
+	<http://www.pmbservices.fr/Dataset/#PMBCus> <http://www.pmbservices.fr/Property/name> "ROBERT" .
+	<http://www.pmbservices.fr/Dataset/#PMBCus> <http://www.pmbservices.fr/Property/firstname> "Eric" .
+	
+	
+	
+	
+	<http://www.pmbservices.fr/Dataset/#CairnCusMS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/CustomerMind> .
+	<http://www.pmbservices.fr/Dataset/#CairnCusMS> <http://www.pmbservices.fr/Property/customer> <http://www.pmbservices.fr/Dataset/#CairnCus> .
+	<http://www.pmbservices.fr/Dataset/#CairnCusMS> <http://www.pmbservices.fr/Property/mindState> <http://www.pmbservices.fr/Dataset/#Bon> .
+	
+	<http://www.pmbservices.fr/Dataset/#IIMCusMS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/CustomerMind> .
+	<http://www.pmbservices.fr/Dataset/#IIMCusMS> <http://www.pmbservices.fr/Property/customer> <http://www.pmbservices.fr/Dataset/#IIMCus> .
+	<http://www.pmbservices.fr/Dataset/#IIMCusMS> <http://www.pmbservices.fr/Property/mindState> <http://www.pmbservices.fr/Dataset/#Bon> .
+	
+	<http://www.pmbservices.fr/Dataset/#RadioFranceCusMS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/CustomerMind> .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceCusMS> <http://www.pmbservices.fr/Property/customer> <http://www.pmbservices.fr/Dataset/#RadioFranceCus> .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceCusMS> <http://www.pmbservices.fr/Property/mindState> <http://www.pmbservices.fr/Dataset/#Bon> .
+	
+	<http://www.pmbservices.fr/Dataset/#RAMEAUCusMS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/CustomerMind> .
+	<http://www.pmbservices.fr/Dataset/#RAMEAUCusMS> <http://www.pmbservices.fr/Property/customer> <http://www.pmbservices.fr/Dataset/#RAMEAUCus> .
+	<http://www.pmbservices.fr/Dataset/#RAMEAUCusMS> <http://www.pmbservices.fr/Property/mindState> <http://www.pmbservices.fr/Dataset/#Bon> .
+	
+	<http://www.pmbservices.fr/Dataset/#ArteVODCusMS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/CustomerMind> .
+	<http://www.pmbservices.fr/Dataset/#ArteVODCusMS> <http://www.pmbservices.fr/Property/customer> <http://www.pmbservices.fr/Dataset/#ArteVODCus> .
+	<http://www.pmbservices.fr/Dataset/#ArteVODCusMS> <http://www.pmbservices.fr/Property/mindState> <http://www.pmbservices.fr/Dataset/#Bon> .
+	
+	<http://www.pmbservices.fr/Dataset/#NumilogCusMS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/CustomerMind> .
+	<http://www.pmbservices.fr/Dataset/#NumilogCusMS> <http://www.pmbservices.fr/Property/customer> <http://www.pmbservices.fr/Dataset/#NumilogCus> .
+	<http://www.pmbservices.fr/Dataset/#NumilogCusMS> <http://www.pmbservices.fr/Property/mindState> <http://www.pmbservices.fr/Dataset/#Bon> .
+	
+	<http://www.pmbservices.fr/Dataset/#ReimsCusMS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/CustomerMind> .
+	<http://www.pmbservices.fr/Dataset/#ReimsCusMS> <http://www.pmbservices.fr/Property/customer> <http://www.pmbservices.fr/Dataset/#ReimsCus> .
+	<http://www.pmbservices.fr/Dataset/#ReimsCusMS> <http://www.pmbservices.fr/Property/mindState> <http://www.pmbservices.fr/Dataset/#Bon> .
+	
+	<http://www.pmbservices.fr/Dataset/#DefaultCusMS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/CustomerMind> .
+	<http://www.pmbservices.fr/Dataset/#DefaultCusMS> <http://www.pmbservices.fr/Property/customer> <http://www.pmbservices.fr/Dataset/#DefaultCus> .
+	<http://www.pmbservices.fr/Dataset/#DefaultCusMS> <http://www.pmbservices.fr/Property/mindState> <http://www.pmbservices.fr/Dataset/#Bon> .
+	
+	<http://www.pmbservices.fr/Dataset/#PMBCusMS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/CustomerMind> .
+	<http://www.pmbservices.fr/Dataset/#PMBCusMS> <http://www.pmbservices.fr/Property/customer> <http://www.pmbservices.fr/Dataset/#PMBCus> .
+	<http://www.pmbservices.fr/Dataset/#PMBCusMS> <http://www.pmbservices.fr/Property/mindState> <http://www.pmbservices.fr/Dataset/#Bon> .
+	
+	
+	
+	
+	<http://www.pmbservices.fr/Dataset/#CairnPro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Project> .
+	<http://www.pmbservices.fr/Dataset/#CairnPro> <http://www.w3.org/2000/01/rdf-schema#label> "CAIRN" .
+	<http://www.pmbservices.fr/Dataset/#CairnPro> <http://www.pmbservices.fr/Property/priority> <http://www.pmbservices.fr/Dataset/#PrioNormale> .
+	<http://www.pmbservices.fr/Dataset/#CairnPro> <http://www.pmbservices.fr/Property/customer> <http://www.pmbservices.fr/Dataset/#CairnCusMS> .
+	<http://www.pmbservices.fr/Dataset/#CairnPro> <http://www.pmbservices.fr/Property/developersMind> <http://www.pmbservices.fr/Dataset/#Moy>  .
+	
+	<http://www.pmbservices.fr/Dataset/#ReimsPro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Project> .
+	<http://www.pmbservices.fr/Dataset/#ReimsPro> <http://www.w3.org/2000/01/rdf-schema#label> "Reims" .
+	<http://www.pmbservices.fr/Dataset/#ReimsPro> <http://www.pmbservices.fr/Property/priority> <http://www.pmbservices.fr/Dataset/#PrioNormale> .
+	<http://www.pmbservices.fr/Dataset/#ReimsPro> <http://www.pmbservices.fr/Property/customer> <http://www.pmbservices.fr/Dataset/#ReimsCusMS> .
+	<http://www.pmbservices.fr/Dataset/#ReimsPro> <http://www.pmbservices.fr/Property/developersMind> <http://www.pmbservices.fr/Dataset/#Moy>  .
+	
+	<http://www.pmbservices.fr/Dataset/#IIMPro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Project> .
+	<http://www.pmbservices.fr/Dataset/#IIMPro> <http://www.w3.org/2000/01/rdf-schema#label> "IIM" .
+	<http://www.pmbservices.fr/Dataset/#IIMPro> <http://www.pmbservices.fr/Property/priority> <http://www.pmbservices.fr/Dataset/#PrioNormale> .
+	<http://www.pmbservices.fr/Dataset/#IIMPro> <http://www.pmbservices.fr/Property/customer> <http://www.pmbservices.fr/Dataset/#IIMCusMS> .
+	<http://www.pmbservices.fr/Dataset/#IIMPro> <http://www.pmbservices.fr/Property/developersMind> <http://www.pmbservices.fr/Dataset/#Moy>  .
+	
+	<http://www.pmbservices.fr/Dataset/#RAMEAUPro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Project> .
+	<http://www.pmbservices.fr/Dataset/#RAMEAUPro> <http://www.w3.org/2000/01/rdf-schema#label> "RAMEAU" .
+	<http://www.pmbservices.fr/Dataset/#RAMEAUPro> <http://www.pmbservices.fr/Property/priority> <http://www.pmbservices.fr/Dataset/#PrioNormale> .
+	<http://www.pmbservices.fr/Dataset/#RAMEAUPro> <http://www.pmbservices.fr/Property/customer> <http://www.pmbservices.fr/Dataset/#RAMEAUCusMS> .
+	<http://www.pmbservices.fr/Dataset/#RAMEAUPro> <http://www.pmbservices.fr/Property/developersMind> <http://www.pmbservices.fr/Dataset/#Moy>  .
+	
+	<http://www.pmbservices.fr/Dataset/#ArteVODPro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Project> .
+	<http://www.pmbservices.fr/Dataset/#ArteVODPro> <http://www.w3.org/2000/01/rdf-schema#label> "ArteVOD" .
+	<http://www.pmbservices.fr/Dataset/#ArteVODPro> <http://www.pmbservices.fr/Property/priority> <http://www.pmbservices.fr/Dataset/#PrioNormale> .
+	<http://www.pmbservices.fr/Dataset/#ArteVODPro> <http://www.pmbservices.fr/Property/customer> <http://www.pmbservices.fr/Dataset/#ArteVODCusMS> .
+	<http://www.pmbservices.fr/Dataset/#ArteVODPro> <http://www.pmbservices.fr/Property/developersMind> <http://www.pmbservices.fr/Dataset/#Moy>  .
+	
+	<http://www.pmbservices.fr/Dataset/#NumilogPro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Project> .
+	<http://www.pmbservices.fr/Dataset/#NumilogPro> <http://www.w3.org/2000/01/rdf-schema#label> "Connecteur Numilog" .
+	<http://www.pmbservices.fr/Dataset/#NumilogPro> <http://www.pmbservices.fr/Property/priority> <http://www.pmbservices.fr/Dataset/#PrioNormale> .
+	<http://www.pmbservices.fr/Dataset/#NumilogPro> <http://www.pmbservices.fr/Property/customer> <http://www.pmbservices.fr/Dataset/#NumilogCusMS> .
+	<http://www.pmbservices.fr/Dataset/#NumilogPro> <http://www.pmbservices.fr/Property/developersMind> <http://www.pmbservices.fr/Dataset/#Moy>  .
+	
+	<http://www.pmbservices.fr/Dataset/#RadioFrancePro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Project> .
+	<http://www.pmbservices.fr/Dataset/#RadioFrancePro> <http://www.w3.org/2000/01/rdf-schema#label> "RadioFrance" .
+	<http://www.pmbservices.fr/Dataset/#RadioFrancePro> <http://www.pmbservices.fr/Property/priority> <http://www.pmbservices.fr/Dataset/#PrioNormale> .
+	<http://www.pmbservices.fr/Dataset/#RadioFrancePro> <http://www.pmbservices.fr/Property/customer> <http://www.pmbservices.fr/Dataset/#RadioFranceCusMS> .
+	<http://www.pmbservices.fr/Dataset/#RadioFrancePro> <http://www.pmbservices.fr/Property/developersMind> <http://www.pmbservices.fr/Dataset/#Moy>  .
+	
+	<http://www.pmbservices.fr/Dataset/#ModuleFRBRGestionPro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Project> .
+	<http://www.pmbservices.fr/Dataset/#ModuleFRBRGestionPro> <http://www.w3.org/2000/01/rdf-schema#label> "Module FRBR Gestion" .
+	<http://www.pmbservices.fr/Dataset/#ModuleFRBRGestionPro> <http://www.pmbservices.fr/Property/priority> <http://www.pmbservices.fr/Dataset/#PrioNormale> .
+	<http://www.pmbservices.fr/Dataset/#ModuleFRBRGestionPro> <http://www.pmbservices.fr/Property/customer> <http://www.pmbservices.fr/Dataset/#DefaultCusMS> .
+	<http://www.pmbservices.fr/Dataset/#ModuleFRBRGestionPro> <http://www.pmbservices.fr/Property/developersMind> <http://www.pmbservices.fr/Dataset/#Moy>  .
+	
+	<http://www.pmbservices.fr/Dataset/#RFDiversPro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Project> .
+	<http://www.pmbservices.fr/Dataset/#RFDiversPro> <http://www.w3.org/2000/01/rdf-schema#label> "RF Divers" .
+	<http://www.pmbservices.fr/Dataset/#RFDiversPro> <http://www.pmbservices.fr/Property/priority> <http://www.pmbservices.fr/Dataset/#PrioNormale> .
+	<http://www.pmbservices.fr/Dataset/#RFDiversPro> <http://www.pmbservices.fr/Property/customer> <http://www.pmbservices.fr/Dataset/#DefaultCusMS> .
+	<http://www.pmbservices.fr/Dataset/#RFDiversPro> <http://www.pmbservices.fr/Property/developersMind> <http://www.pmbservices.fr/Dataset/#Moy>  .
+	
+	<http://www.pmbservices.fr/Dataset/#OptiPMBPro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Project> .
+	<http://www.pmbservices.fr/Dataset/#OptiPMBPro> <http://www.w3.org/2000/01/rdf-schema#label> "Optimisation PMB" .
+	<http://www.pmbservices.fr/Dataset/#OptiPMBPro> <http://www.pmbservices.fr/Property/priority> <http://www.pmbservices.fr/Dataset/#PrioNormale> .
+	<http://www.pmbservices.fr/Dataset/#OptiPMBPro> <http://www.pmbservices.fr/Property/customer> <http://www.pmbservices.fr/Dataset/#PMBCusMS> .
+	<http://www.pmbservices.fr/Dataset/#OptiPMBPro> <http://www.pmbservices.fr/Property/developersMind> <http://www.pmbservices.fr/Dataset/#Moy>  .
+	
+	<http://www.pmbservices.fr/Dataset/#PHP7Pro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Project> .
+	<http://www.pmbservices.fr/Dataset/#PHP7Pro> <http://www.w3.org/2000/01/rdf-schema#label> "PHP7" .
+	<http://www.pmbservices.fr/Dataset/#PHP7Pro> <http://www.pmbservices.fr/Property/priority> <http://www.pmbservices.fr/Dataset/#PrioNormale> .
+	<http://www.pmbservices.fr/Dataset/#PHP7Pro> <http://www.pmbservices.fr/Property/customer> <http://www.pmbservices.fr/Dataset/#PMBCusMS> .
+	<http://www.pmbservices.fr/Dataset/#PHP7Pro> <http://www.pmbservices.fr/Property/developersMind> <http://www.pmbservices.fr/Dataset/#Moy>  .
+	
+	<http://www.pmbservices.fr/Dataset/#PMBKnowledgePro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Project> .
+	<http://www.pmbservices.fr/Dataset/#PMBKnowledgePro> <http://www.w3.org/2000/01/rdf-schema#label> "PMB Knowledge" .
+	<http://www.pmbservices.fr/Dataset/#PMBKnowledgePro> <http://www.pmbservices.fr/Property/priority> <http://www.pmbservices.fr/Dataset/#PrioNormale> .
+	<http://www.pmbservices.fr/Dataset/#PMBKnowledgePro> <http://www.pmbservices.fr/Property/customer> <http://www.pmbservices.fr/Dataset/#PMBCusMS> .
+	<http://www.pmbservices.fr/Dataset/#PMBKnowledgePro> <http://www.pmbservices.fr/Property/developersMind> <http://www.pmbservices.fr/Dataset/#Moy>  .
+	
+	<http://www.pmbservices.fr/Dataset/#CataAutoPro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Project> .
+	<http://www.pmbservices.fr/Dataset/#CataAutoPro> <http://www.w3.org/2000/01/rdf-schema#label> "Catalogage Automatique" .
+	<http://www.pmbservices.fr/Dataset/#CataAutoPro> <http://www.pmbservices.fr/Property/priority> <http://www.pmbservices.fr/Dataset/#PrioNormale> .
+	<http://www.pmbservices.fr/Dataset/#CataAutoPro> <http://www.pmbservices.fr/Property/customer> <http://www.pmbservices.fr/Dataset/#PMBCusMS> .
+	<http://www.pmbservices.fr/Dataset/#CataAutoPro> <http://www.pmbservices.fr/Property/developersMind> <http://www.pmbservices.fr/Dataset/#Moy>  .
+	
+	
+	
+	
+	<http://www.pmbservices.fr/Dataset/#CairnDev> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Development> .
+	<http://www.pmbservices.fr/Dataset/#CairnDev> <http://www.pmbservices.fr/Property/priority> <http://www.pmbservices.fr/Dataset/#PrioNormale> .
+	<http://www.pmbservices.fr/Dataset/#CairnDev> <http://www.w3.org/2000/01/rdf-schema#label> "CAIRN" .
+	<http://www.pmbservices.fr/Dataset/#CairnDev> <http://www.pmbservices.fr/Property/effort> "22" .
+	<http://www.pmbservices.fr/Dataset/#CairnDev> <http://www.pmbservices.fr/Property/status> "0" .
+	<http://www.pmbservices.fr/Dataset/#CairnDev> <http://www.pmbservices.fr/Property/plannedStart> "2017-03-22" .
+	<http://www.pmbservices.fr/Dataset/#CairnDev> <http://www.pmbservices.fr/Property/plannedEnd> "2017-03-22" .
+	<http://www.pmbservices.fr/Dataset/#CairnDev> <http://www.pmbservices.fr/Property/optionalDevelopment> "false" .
+	<http://www.pmbservices.fr/Dataset/#CairnPro> <http://www.pmbservices.fr/Property/development> <http://www.pmbservices.fr/Dataset/#CairnDev> .
+	
+	
+	<http://www.pmbservices.fr/Dataset/#ReimsDev> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Development> .
+	<http://www.pmbservices.fr/Dataset/#ReimsDev> <http://www.pmbservices.fr/Property/priority> <http://www.pmbservices.fr/Dataset/#PrioNormale> .
+	<http://www.pmbservices.fr/Dataset/#ReimsDev> <http://www.w3.org/2000/01/rdf-schema#label> "Reims" .
+	<http://www.pmbservices.fr/Dataset/#ReimsDev> <http://www.pmbservices.fr/Property/effort> "2" .
+	<http://www.pmbservices.fr/Dataset/#ReimsDev> <http://www.pmbservices.fr/Property/status> "0" .
+	<http://www.pmbservices.fr/Dataset/#ReimsDev> <http://www.pmbservices.fr/Property/plannedStart> "2017-03-23" .
+	<http://www.pmbservices.fr/Dataset/#ReimsDev> <http://www.pmbservices.fr/Property/plannedEnd> "2017-03-23" .
+	<http://www.pmbservices.fr/Dataset/#ReimsDev> <http://www.pmbservices.fr/Property/optionalDevelopment> "false" .
+	<http://www.pmbservices.fr/Dataset/#ReimsPro> <http://www.pmbservices.fr/Property/development> <http://www.pmbservices.fr/Dataset/#ReimsDev> .
+	
+	
+	<http://www.pmbservices.fr/Dataset/#RAMEAUDev> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Development> .
+	<http://www.pmbservices.fr/Dataset/#RAMEAUDev> <http://www.pmbservices.fr/Property/priority> <http://www.pmbservices.fr/Dataset/#PrioNormale> .
+	<http://www.pmbservices.fr/Dataset/#RAMEAUDev> <http://www.w3.org/2000/01/rdf-schema#label> "RAMEAU" .
+	<http://www.pmbservices.fr/Dataset/#RAMEAUDev> <http://www.pmbservices.fr/Property/effort> "5" .
+	<http://www.pmbservices.fr/Dataset/#RAMEAUDev> <http://www.pmbservices.fr/Property/status> "0" .
+	<http://www.pmbservices.fr/Dataset/#RAMEAUDev> <http://www.pmbservices.fr/Property/plannedStart> "2017-05-08" .
+	<http://www.pmbservices.fr/Dataset/#RAMEAUDev> <http://www.pmbservices.fr/Property/plannedEnd> "2017-05-12" .
+	<http://www.pmbservices.fr/Dataset/#RAMEAUDev> <http://www.pmbservices.fr/Property/optionalDevelopment> "false" .
+	<http://www.pmbservices.fr/Dataset/#RAMEAUPro> <http://www.pmbservices.fr/Property/development> <http://www.pmbservices.fr/Dataset/#RAMEAUDev> .
+	
+	
+	<http://www.pmbservices.fr/Dataset/#ArteVODDev> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Development> .
+	<http://www.pmbservices.fr/Dataset/#ArteVODDev> <http://www.pmbservices.fr/Property/priority> <http://www.pmbservices.fr/Dataset/#PrioNormale> .
+	<http://www.pmbservices.fr/Dataset/#ArteVODDev> <http://www.w3.org/2000/01/rdf-schema#label> "ArteVOD" .
+	<http://www.pmbservices.fr/Dataset/#ArteVODDev> <http://www.pmbservices.fr/Property/effort> "5" .
+	<http://www.pmbservices.fr/Dataset/#ArteVODDev> <http://www.pmbservices.fr/Property/status> "0" .
+	<http://www.pmbservices.fr/Dataset/#ArteVODDev> <http://www.pmbservices.fr/Property/plannedStart> "2017-05-15" .
+	<http://www.pmbservices.fr/Dataset/#ArteVODDev> <http://www.pmbservices.fr/Property/plannedEnd> "2017-05-19" .
+	<http://www.pmbservices.fr/Dataset/#ArteVODDev> <http://www.pmbservices.fr/Property/optionalDevelopment> "false" .
+	<http://www.pmbservices.fr/Dataset/#ArteVODPro> <http://www.pmbservices.fr/Property/development> <http://www.pmbservices.fr/Dataset/#ArteVODDev> .
+	
+	
+	<http://www.pmbservices.fr/Dataset/#NumilogDev> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Development> .
+	<http://www.pmbservices.fr/Dataset/#NumilogDev> <http://www.pmbservices.fr/Property/priority> <http://www.pmbservices.fr/Dataset/#PrioNormale> .
+	<http://www.pmbservices.fr/Dataset/#NumilogDev> <http://www.w3.org/2000/01/rdf-schema#label> "Connecteur Numilog" .
+	<http://www.pmbservices.fr/Dataset/#NumilogDev> <http://www.pmbservices.fr/Property/effort> "5" .
+	<http://www.pmbservices.fr/Dataset/#NumilogDev> <http://www.pmbservices.fr/Property/status> "0" .
+	<http://www.pmbservices.fr/Dataset/#NumilogDev> <http://www.pmbservices.fr/Property/plannedStart> "2017-05-22" .
+	<http://www.pmbservices.fr/Dataset/#NumilogDev> <http://www.pmbservices.fr/Property/plannedEnd> "2017-05-26" .
+	<http://www.pmbservices.fr/Dataset/#NumilogDev> <http://www.pmbservices.fr/Property/optionalDevelopment> "false" .
+	<http://www.pmbservices.fr/Dataset/#NumilogPro> <http://www.pmbservices.fr/Property/development> <http://www.pmbservices.fr/Dataset/#NumilogDev> .
+	
+	
+	<http://www.pmbservices.fr/Dataset/#IIMDev.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Development> .
+	<http://www.pmbservices.fr/Dataset/#IIMDev.1> <http://www.pmbservices.fr/Property/priority> <http://www.pmbservices.fr/Dataset/#PrioNormale> .
+	<http://www.pmbservices.fr/Dataset/#IIMDev.1> <http://www.w3.org/2000/01/rdf-schema#label> "Module sémantique" .
+	<http://www.pmbservices.fr/Dataset/#IIMDev.1> <http://www.pmbservices.fr/Property/effort> "18" .
+	<http://www.pmbservices.fr/Dataset/#IIMDev.1> <http://www.pmbservices.fr/Property/status> "0" .
+	<http://www.pmbservices.fr/Dataset/#IIMDev.1> <http://www.pmbservices.fr/Property/plannedStart> "2017-05-01" .
+	<http://www.pmbservices.fr/Dataset/#IIMDev.1> <http://www.pmbservices.fr/Property/plannedEnd> "2017-05-12" .
+	<http://www.pmbservices.fr/Dataset/#IIMDev.1> <http://www.pmbservices.fr/Property/optionalDevelopment> "false" .
+	<http://www.pmbservices.fr/Dataset/#IIMDev.1> <http://www.pmbservices.fr/Property/skillTag> <http://www.pmbservices.fr/Dataset/#PHP> .
+	<http://www.pmbservices.fr/Dataset/#IIMDev.1> <http://www.pmbservices.fr/Property/skillTag> <http://www.pmbservices.fr/Dataset/#SPARQL> .
+	<http://www.pmbservices.fr/Dataset/#IIMPro> <http://www.pmbservices.fr/Property/development> <http://www.pmbservices.fr/Dataset/#IIMDev.1> .
+	
+	<http://www.pmbservices.fr/Dataset/#IIMDev.2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Development> .
+	<http://www.pmbservices.fr/Dataset/#IIMDev.2> <http://www.pmbservices.fr/Property/priority> <http://www.pmbservices.fr/Dataset/#PrioNormale> .
+	<http://www.pmbservices.fr/Dataset/#IIMDev.2> <http://www.w3.org/2000/01/rdf-schema#label> "Dev IIM tranche 1" .
+	<http://www.pmbservices.fr/Dataset/#IIMDev.2> <http://www.pmbservices.fr/Property/previousDevelopment> <http://www.pmbservices.fr/Dataset/#IIMDev.1> .
+	<http://www.pmbservices.fr/Dataset/#IIMDev.2> <http://www.pmbservices.fr/Property/effort> "75" .
+	<http://www.pmbservices.fr/Dataset/#IIMDev.2> <http://www.pmbservices.fr/Property/status> "0" .
+	<http://www.pmbservices.fr/Dataset/#IIMDev.2> <http://www.pmbservices.fr/Property/plannedStart> "2017-05-15" .
+	<http://www.pmbservices.fr/Dataset/#IIMDev.2> <http://www.pmbservices.fr/Property/plannedEnd> "2017-06-09" .
+	<http://www.pmbservices.fr/Dataset/#IIMDev.2> <http://www.pmbservices.fr/Property/optionalDevelopment> "false" .
+	<http://www.pmbservices.fr/Dataset/#IIMDev.2> <http://www.pmbservices.fr/Property/skillTag> <http://www.pmbservices.fr/Dataset/#PHP> .
+	<http://www.pmbservices.fr/Dataset/#IIMDev.2> <http://www.pmbservices.fr/Property/skillTag> <http://www.pmbservices.fr/Dataset/#SQL> .
+	<http://www.pmbservices.fr/Dataset/#IIMPro> <http://www.pmbservices.fr/Property/development> <http://www.pmbservices.fr/Dataset/#IIMDev.2> .
+	
+	<http://www.pmbservices.fr/Dataset/#IIMDev.2.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Development> .
+	<http://www.pmbservices.fr/Dataset/#IIMDev.2.1> <http://www.pmbservices.fr/Property/priority> <http://www.pmbservices.fr/Dataset/#PrioNormale> .
+	<http://www.pmbservices.fr/Dataset/#IIMDev.2.1> <http://www.w3.org/2000/01/rdf-schema#label> "Dev IIM Tranch 1 - P1" .
+	<http://www.pmbservices.fr/Dataset/#IIMDev.2.1> <http://www.pmbservices.fr/Property/parentDevelopment> <http://www.pmbservices.fr/Dataset/#IIMDev.2> .
+	<http://www.pmbservices.fr/Dataset/#IIMDev.2.1> <http://www.pmbservices.fr/Property/effort> "66" .
+	<http://www.pmbservices.fr/Dataset/#IIMDev.2.1> <http://www.pmbservices.fr/Property/status> "0" .
+	<http://www.pmbservices.fr/Dataset/#IIMDev.2.1> <http://www.pmbservices.fr/Property/plannedStart> "2017-05-15" .
+	<http://www.pmbservices.fr/Dataset/#IIMDev.2.1> <http://www.pmbservices.fr/Property/plannedEnd> "2017-06-02" .
+	<http://www.pmbservices.fr/Dataset/#IIMDev.2.1> <http://www.pmbservices.fr/Property/optionalDevelopment> "false" .
+	<http://www.pmbservices.fr/Dataset/#IIMDev.2.1> <http://www.pmbservices.fr/Property/skillTag> <http://www.pmbservices.fr/Dataset/#PHP> .
+	<http://www.pmbservices.fr/Dataset/#IIMDev.2.1> <http://www.pmbservices.fr/Property/skillTag> <http://www.pmbservices.fr/Dataset/#SQL> .
+	<http://www.pmbservices.fr/Dataset/#IIMPro> <http://www.pmbservices.fr/Property/development> <http://www.pmbservices.fr/Dataset/#IIMDev.2.1> .
+	
+	<http://www.pmbservices.fr/Dataset/#IIMDev.2.2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Development> .
+	<http://www.pmbservices.fr/Dataset/#IIMDev.2.2> <http://www.pmbservices.fr/Property/priority> <http://www.pmbservices.fr/Dataset/#PrioNormale> .
+	<http://www.pmbservices.fr/Dataset/#IIMDev.2.2> <http://www.w3.org/2000/01/rdf-schema#label> "Dev IIM Tranch 1 - P2" .
+	<http://www.pmbservices.fr/Dataset/#IIMDev.2.2> <http://www.pmbservices.fr/Property/parentDevelopment> <http://www.pmbservices.fr/Dataset/#IIMDev.2> .
+	<http://www.pmbservices.fr/Dataset/#IIMDev.2.2> <http://www.pmbservices.fr/Property/previousDevelopment> <http://www.pmbservices.fr/Dataset/#IIMDev.2.1> .
+	<http://www.pmbservices.fr/Dataset/#IIMDev.2.2> <http://www.pmbservices.fr/Property/effort> "9" .
+	<http://www.pmbservices.fr/Dataset/#IIMDev.2.2> <http://www.pmbservices.fr/Property/status> "0" .
+	<http://www.pmbservices.fr/Dataset/#IIMDev.2.2> <http://www.pmbservices.fr/Property/plannedStart> "2017-06-05" .
+	<http://www.pmbservices.fr/Dataset/#IIMDev.2.2> <http://www.pmbservices.fr/Property/plannedEnd> "2017-06-09" .
+	<http://www.pmbservices.fr/Dataset/#IIMDev.2.2> <http://www.pmbservices.fr/Property/optionalDevelopment> "false" .
+	<http://www.pmbservices.fr/Dataset/#IIMDev.2.2> <http://www.pmbservices.fr/Property/resource> <http://www.pmbservices.fr/Dataset/#ARenou> .
+	<http://www.pmbservices.fr/Dataset/#IIMDev.2.2> <http://www.pmbservices.fr/Property/resource> <http://www.pmbservices.fr/Dataset/#APetithomme> .
+	<http://www.pmbservices.fr/Dataset/#IIMDev.2.2> <http://www.pmbservices.fr/Property/skillTag> <http://www.pmbservices.fr/Dataset/#PHP> .
+	<http://www.pmbservices.fr/Dataset/#IIMDev.2.2> <http://www.pmbservices.fr/Property/skillTag> <http://www.pmbservices.fr/Dataset/#SQL> .
+	<http://www.pmbservices.fr/Dataset/#IIMPro> <http://www.pmbservices.fr/Property/development> <http://www.pmbservices.fr/Dataset/#IIMDev.2.2> .
+	
+	
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Development> .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.1> <http://www.pmbservices.fr/Property/priority> <http://www.pmbservices.fr/Dataset/#PrioNormale> .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.1> <http://www.w3.org/2000/01/rdf-schema#label> "RF Sphinx" .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.1> <http://www.pmbservices.fr/Property/effort> "35" .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.1> <http://www.pmbservices.fr/Property/status> "0" .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.1> <http://www.pmbservices.fr/Property/plannedStart> "2017-03-27" .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.1> <http://www.pmbservices.fr/Property/plannedEnd> "2017-04-21" .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.1> <http://www.pmbservices.fr/Property/optionalDevelopment> "false" .
+	<http://www.pmbservices.fr/Dataset/#RadioFrancePro> <http://www.pmbservices.fr/Property/development> <http://www.pmbservices.fr/Dataset/#RadioFranceDev.1> .
+	
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Development> .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.2> <http://www.pmbservices.fr/Property/priority> <http://www.pmbservices.fr/Dataset/#PrioNormale> .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.2> <http://www.w3.org/2000/01/rdf-schema#label> "Recherche autorité OPAC" .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.2> <http://www.pmbservices.fr/Property/previousDevelopment> <http://www.pmbservices.fr/Dataset/#RadioFranceDev.1> .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.2> <http://www.pmbservices.fr/Property/effort> "18" .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.2> <http://www.pmbservices.fr/Property/status> "0" .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.2> <http://www.pmbservices.fr/Property/plannedStart> "2017-06-19" .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.2> <http://www.pmbservices.fr/Property/plannedEnd> "2017-06-30" .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.2> <http://www.pmbservices.fr/Property/optionalDevelopment> "false" .
+	<http://www.pmbservices.fr/Dataset/#RadioFrancePro> <http://www.pmbservices.fr/Property/development> <http://www.pmbservices.fr/Dataset/#RadioFranceDev.2> .
+	
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Development> .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.3> <http://www.pmbservices.fr/Property/priority> <http://www.pmbservices.fr/Dataset/#PrioNormale> .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.3> <http://www.w3.org/2000/01/rdf-schema#label> "Développements sur les autorités" .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.3> <http://www.pmbservices.fr/Property/previousDevelopment> <http://www.pmbservices.fr/Dataset/#RadioFranceDev.2> .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.3> <http://www.pmbservices.fr/Property/effort> "35" .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.3> <http://www.pmbservices.fr/Property/status> "0" .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.3> <http://www.pmbservices.fr/Property/plannedStart> "2017-04-24" .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.3> <http://www.pmbservices.fr/Property/plannedEnd> "2017-06-16" .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.3> <http://www.pmbservices.fr/Property/optionalDevelopment> "false" .
+	<http://www.pmbservices.fr/Dataset/#RadioFrancePro> <http://www.pmbservices.fr/Property/development> <http://www.pmbservices.fr/Dataset/#RadioFranceDev.3> .
+	
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.3.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Development> .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.3.1> <http://www.pmbservices.fr/Property/priority> <http://www.pmbservices.fr/Dataset/#PrioNormale> .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.3.1> <http://www.w3.org/2000/01/rdf-schema#label> "Phase 1" .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.3.1> <http://www.pmbservices.fr/Property/parentDevelopment> <http://www.pmbservices.fr/Dataset/#RadioFranceDev.3> .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.3.1> <http://www.pmbservices.fr/Property/effort> "18" .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.3.1> <http://www.pmbservices.fr/Property/status> "0" .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.3.1> <http://www.pmbservices.fr/Property/plannedStart> "2017-04-24" .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.3.1> <http://www.pmbservices.fr/Property/plannedEnd> "2017-05-05" .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.3.1> <http://www.pmbservices.fr/Property/optionalDevelopment> "false" .
+	<http://www.pmbservices.fr/Dataset/#RadioFrancePro> <http://www.pmbservices.fr/Property/development> <http://www.pmbservices.fr/Dataset/#RadioFranceDev.3.1> .
+	
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.3.2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Development> .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.3.2> <http://www.pmbservices.fr/Property/priority> <http://www.pmbservices.fr/Dataset/#PrioNormale> .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.3.2> <http://www.w3.org/2000/01/rdf-schema#label> "Phase 2" .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.3.2> <http://www.pmbservices.fr/Property/parentDevelopment> <http://www.pmbservices.fr/Dataset/#RadioFranceDev.3> .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.3.2> <http://www.pmbservices.fr/Property/previousDevelopment> <http://www.pmbservices.fr/Dataset/#RadioFranceDev.3.1> .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.3.2> <http://www.pmbservices.fr/Property/effort> "9" .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.3.2> <http://www.pmbservices.fr/Property/status> "0" .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.3.2> <http://www.pmbservices.fr/Property/plannedStart> "2017-05-08" .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.3.2> <http://www.pmbservices.fr/Property/plannedEnd> "2017-05-12" .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.3.2> <http://www.pmbservices.fr/Property/optionalDevelopment> "false" .
+	<http://www.pmbservices.fr/Dataset/#RadioFrancePro> <http://www.pmbservices.fr/Property/development> <http://www.pmbservices.fr/Dataset/#RadioFranceDev.3.2> .
+	
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.3.3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Development> .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.3.3> <http://www.pmbservices.fr/Property/priority> <http://www.pmbservices.fr/Dataset/#PrioNormale> .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.3.3> <http://www.w3.org/2000/01/rdf-schema#label> "Phase 3" .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.3.3> <http://www.pmbservices.fr/Property/parentDevelopment> <http://www.pmbservices.fr/Dataset/#RadioFranceDev.3> .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.3.3> <http://www.pmbservices.fr/Property/previousDevelopment> <http://www.pmbservices.fr/Dataset/#RadioFranceDev.3.2> .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.3.3> <http://www.pmbservices.fr/Property/effort> "9" .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.3.3> <http://www.pmbservices.fr/Property/status> "0" .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.3.3> <http://www.pmbservices.fr/Property/plannedStart> "2017-06-12" .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.3.3> <http://www.pmbservices.fr/Property/plannedEnd> "2017-06-16" .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.3.3> <http://www.pmbservices.fr/Property/optionalDevelopment> "false" .
+	<http://www.pmbservices.fr/Dataset/#RadioFrancePro> <http://www.pmbservices.fr/Property/development> <http://www.pmbservices.fr/Dataset/#RadioFranceDev.3.3> .
+	
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Development> .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.4> <http://www.pmbservices.fr/Property/priority> <http://www.pmbservices.fr/Dataset/#PrioNormale> .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.4> <http://www.w3.org/2000/01/rdf-schema#label> "Module FRBR OPAC" .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.4> <http://www.pmbservices.fr/Property/previousDevelopment> <http://www.pmbservices.fr/Dataset/#RadioFranceDev.3> .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.4> <http://www.pmbservices.fr/Property/effort> "74" .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.4> <http://www.pmbservices.fr/Property/status> "0" .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.4> <http://www.pmbservices.fr/Property/plannedStart> "2017-03-22" .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.4> <http://www.pmbservices.fr/Property/plannedEnd> "2017-04-28" .
+	<http://www.pmbservices.fr/Dataset/#RadioFranceDev.4> <http://www.pmbservices.fr/Property/optionalDevelopment> "false" .
+	<http://www.pmbservices.fr/Dataset/#RadioFrancePro> <http://www.pmbservices.fr/Property/development> <http://www.pmbservices.fr/Dataset/#RadioFranceDev.4> .
+	
+	
+	<http://www.pmbservices.fr/Dataset/#ModuleFRBRGestionDev.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Development> .
+	<http://www.pmbservices.fr/Dataset/#ModuleFRBRGestionDev.1> <http://www.pmbservices.fr/Property/priority> <http://www.pmbservices.fr/Dataset/#PrioNormale> .
+	<http://www.pmbservices.fr/Dataset/#ModuleFRBRGestionDev.1> <http://www.w3.org/2000/01/rdf-schema#label> "Paniers autorités" .
+	<http://www.pmbservices.fr/Dataset/#ModuleFRBRGestionDev.1> <http://www.pmbservices.fr/Property/effort> "5" .
+	<http://www.pmbservices.fr/Dataset/#ModuleFRBRGestionDev.1> <http://www.pmbservices.fr/Property/status> "0" .
+	<http://www.pmbservices.fr/Dataset/#ModuleFRBRGestionDev.1> <http://www.pmbservices.fr/Property/plannedStart> "2017-06-05" .
+	<http://www.pmbservices.fr/Dataset/#ModuleFRBRGestionDev.1> <http://www.pmbservices.fr/Property/plannedEnd> "2017-06-06" .
+	<http://www.pmbservices.fr/Dataset/#ModuleFRBRGestionDev.1> <http://www.pmbservices.fr/Property/optionalDevelopment> "false" .
+	<http://www.pmbservices.fr/Dataset/#ModuleFRBRGestionPro> <http://www.pmbservices.fr/Property/development> <http://www.pmbservices.fr/Dataset/#ModuleFRBRGestionDev.1> .
+	
+	<http://www.pmbservices.fr/Dataset/#ModuleFRBRGestionDev.2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Development> .
+	<http://www.pmbservices.fr/Dataset/#ModuleFRBRGestionDev.2> <http://www.pmbservices.fr/Property/priority> <http://www.pmbservices.fr/Dataset/#PrioNormale> .
+	<http://www.pmbservices.fr/Dataset/#ModuleFRBRGestionDev.2> <http://www.w3.org/2000/01/rdf-schema#label> "Facettes gestion" .
+	<http://www.pmbservices.fr/Dataset/#ModuleFRBRGestionDev.2> <http://www.pmbservices.fr/Property/previousDevelopment> <http://www.pmbservices.fr/Dataset/#ModuleFRBRGestionDev.1> .
+	<http://www.pmbservices.fr/Dataset/#ModuleFRBRGestionDev.2> <http://www.pmbservices.fr/Property/effort> "5" .
+	<http://www.pmbservices.fr/Dataset/#ModuleFRBRGestionDev.2> <http://www.pmbservices.fr/Property/status> "0" .
+	<http://www.pmbservices.fr/Dataset/#ModuleFRBRGestionDev.2> <http://www.pmbservices.fr/Property/plannedStart> "2017-06-06" .
+	<http://www.pmbservices.fr/Dataset/#ModuleFRBRGestionDev.2> <http://www.pmbservices.fr/Property/plannedEnd> "2017-06-08" .
+	<http://www.pmbservices.fr/Dataset/#ModuleFRBRGestionDev.2> <http://www.pmbservices.fr/Property/optionalDevelopment> "false" .
+	<http://www.pmbservices.fr/Dataset/#ModuleFRBRGestionPro> <http://www.pmbservices.fr/Property/development> <http://www.pmbservices.fr/Dataset/#ModuleFRBRGestionDev.2> .
+	
+	<http://www.pmbservices.fr/Dataset/#ModuleFRBRGestionDev.3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Development> .
+	<http://www.pmbservices.fr/Dataset/#ModuleFRBRGestionDev.3> <http://www.pmbservices.fr/Property/priority> <http://www.pmbservices.fr/Dataset/#PrioNormale> .
+	<http://www.pmbservices.fr/Dataset/#ModuleFRBRGestionDev.3> <http://www.w3.org/2000/01/rdf-schema#label> "Onglet FRBR" .
+	<http://www.pmbservices.fr/Dataset/#ModuleFRBRGestionDev.3> <http://www.pmbservices.fr/Property/previousDevelopment> <http://www.pmbservices.fr/Dataset/#ModuleFRBRGestionDev.2> .
+	<http://www.pmbservices.fr/Dataset/#ModuleFRBRGestionDev.3> <http://www.pmbservices.fr/Property/effort> "44" .
+	<http://www.pmbservices.fr/Dataset/#ModuleFRBRGestionDev.3> <http://www.pmbservices.fr/Property/status> "0" .
+	<http://www.pmbservices.fr/Dataset/#ModuleFRBRGestionDev.3> <http://www.pmbservices.fr/Property/plannedStart> "2017-06-08" .
+	<http://www.pmbservices.fr/Dataset/#ModuleFRBRGestionDev.3> <http://www.pmbservices.fr/Property/plannedEnd> "2017-06-30" .
+	<http://www.pmbservices.fr/Dataset/#ModuleFRBRGestionDev.3> <http://www.pmbservices.fr/Property/optionalDevelopment> "false" .
+	<http://www.pmbservices.fr/Dataset/#ModuleFRBRGestionPro> <http://www.pmbservices.fr/Property/development> <http://www.pmbservices.fr/Dataset/#ModuleFRBRGestionDev.3> .
+	
+	
+	<http://www.pmbservices.fr/Dataset/#RFDiversDev> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Development> .
+	<http://www.pmbservices.fr/Dataset/#RFDiversDev> <http://www.pmbservices.fr/Property/priority> <http://www.pmbservices.fr/Dataset/#PrioNormale> .
+	<http://www.pmbservices.fr/Dataset/#RFDiversDev> <http://www.w3.org/2000/01/rdf-schema#label> "RF Divers" .
+	<http://www.pmbservices.fr/Dataset/#RFDiversDev> <http://www.pmbservices.fr/Property/effort> "2" .
+	<http://www.pmbservices.fr/Dataset/#RFDiversDev> <http://www.pmbservices.fr/Property/status> "0" .
+	<http://www.pmbservices.fr/Dataset/#RFDiversDev> <http://www.pmbservices.fr/Property/plannedStart> "2017-03-24" .
+	<http://www.pmbservices.fr/Dataset/#RFDiversDev> <http://www.pmbservices.fr/Property/plannedEnd> "2017-03-24" .
+	<http://www.pmbservices.fr/Dataset/#RFDiversDev> <http://www.pmbservices.fr/Property/optionalDevelopment> "false" .
+	<http://www.pmbservices.fr/Dataset/#RFDiversPro> <http://www.pmbservices.fr/Property/development> <http://www.pmbservices.fr/Dataset/#RFDiversDev> .
+	
+	
+	<http://www.pmbservices.fr/Dataset/#OptiPMBDev> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Development> .
+	<http://www.pmbservices.fr/Dataset/#OptiPMBDev> <http://www.pmbservices.fr/Property/priority> <http://www.pmbservices.fr/Dataset/#PrioNormale> .
+	<http://www.pmbservices.fr/Dataset/#OptiPMBDev> <http://www.w3.org/2000/01/rdf-schema#label> "Optimisation PMB" .
+	<http://www.pmbservices.fr/Dataset/#OptiPMBDev> <http://www.pmbservices.fr/Property/effort> "18" .
+	<http://www.pmbservices.fr/Dataset/#OptiPMBDev> <http://www.pmbservices.fr/Property/status> "0" .
+	<http://www.pmbservices.fr/Dataset/#OptiPMBDev> <http://www.pmbservices.fr/Property/plannedStart> "2017-06-05" .
+	<http://www.pmbservices.fr/Dataset/#OptiPMBDev> <http://www.pmbservices.fr/Property/plannedEnd> "2017-06-30" .
+	<http://www.pmbservices.fr/Dataset/#OptiPMBDev> <http://www.pmbservices.fr/Property/optionalDevelopment> "false" .
+	<http://www.pmbservices.fr/Dataset/#OptiPMBPro> <http://www.pmbservices.fr/Property/development> <http://www.pmbservices.fr/Dataset/#OptiPMBDev> .
+	
+	
+	<http://www.pmbservices.fr/Dataset/#PHP7Dev> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Development> .
+	<http://www.pmbservices.fr/Dataset/#PHP7Dev> <http://www.pmbservices.fr/Property/priority> <http://www.pmbservices.fr/Dataset/#PrioNormale> .
+	<http://www.pmbservices.fr/Dataset/#PHP7Dev> <http://www.w3.org/2000/01/rdf-schema#label> "PHP7" .
+	<http://www.pmbservices.fr/Dataset/#PHP7Dev> <http://www.pmbservices.fr/Property/effort> "88" .
+	<http://www.pmbservices.fr/Dataset/#PHP7Dev> <http://www.pmbservices.fr/Property/status> "0" .
+	<http://www.pmbservices.fr/Dataset/#PHP7Dev> <http://www.pmbservices.fr/Property/plannedStart> "2017-07-03" .
+	<http://www.pmbservices.fr/Dataset/#PHP7Dev> <http://www.pmbservices.fr/Property/plannedEnd> "2017-07-28" .
+	<http://www.pmbservices.fr/Dataset/#PHP7Dev> <http://www.pmbservices.fr/Property/optionalDevelopment> "false" .
+	<http://www.pmbservices.fr/Dataset/#PHP7Pro> <http://www.pmbservices.fr/Property/development> <http://www.pmbservices.fr/Dataset/#PHP7Dev> .
+	
+	
+	<http://www.pmbservices.fr/Dataset/#PMBKnowledgeDev> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Development> .
+	<http://www.pmbservices.fr/Dataset/#PMBKnowledgeDev> <http://www.pmbservices.fr/Property/priority> <http://www.pmbservices.fr/Dataset/#PrioNormale> .
+	<http://www.pmbservices.fr/Dataset/#PMBKnowledgeDev> <http://www.w3.org/2000/01/rdf-schema#label> "PMB Knowledge" .
+	<http://www.pmbservices.fr/Dataset/#PMBKnowledgeDev> <http://www.pmbservices.fr/Property/effort> "88" .
+	<http://www.pmbservices.fr/Dataset/#PMBKnowledgeDev> <http://www.pmbservices.fr/Property/status> "0" .
+	<http://www.pmbservices.fr/Dataset/#PMBKnowledgeDev> <http://www.pmbservices.fr/Property/plannedStart> "2017-09-04" .
+	<http://www.pmbservices.fr/Dataset/#PMBKnowledgeDev> <http://www.pmbservices.fr/Property/plannedEnd> "2017-09-29" .
+	<http://www.pmbservices.fr/Dataset/#PMBKnowledgeDev> <http://www.pmbservices.fr/Property/optionalDevelopment> "false" .
+	<http://www.pmbservices.fr/Dataset/#PMBKnowledgePro> <http://www.pmbservices.fr/Property/development> <http://www.pmbservices.fr/Dataset/#PMBKnowledgeDev> .
+	
+	
+	<http://www.pmbservices.fr/Dataset/#CataAutoDev> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Development> .
+	<http://www.pmbservices.fr/Dataset/#CataAutoDev> <http://www.pmbservices.fr/Property/priority> <http://www.pmbservices.fr/Dataset/#PrioNormale> .
+	<http://www.pmbservices.fr/Dataset/#CataAutoDev> <http://www.w3.org/2000/01/rdf-schema#label> "Catalogage Automatique" .
+	<http://www.pmbservices.fr/Dataset/#CataAutoDev> <http://www.pmbservices.fr/Property/effort> "35" .
+	<http://www.pmbservices.fr/Dataset/#CataAutoDev> <http://www.pmbservices.fr/Property/status> "0" .
+	<http://www.pmbservices.fr/Dataset/#CataAutoDev> <http://www.pmbservices.fr/Property/plannedStart> "2017-10-02" .
+	<http://www.pmbservices.fr/Dataset/#CataAutoDev> <http://www.pmbservices.fr/Property/plannedEnd> "2017-10-27" .
+	<http://www.pmbservices.fr/Dataset/#CataAutoDev> <http://www.pmbservices.fr/Property/optionalDevelopment> "false" .
+	<http://www.pmbservices.fr/Dataset/#CataAutoPro> <http://www.pmbservices.fr/Property/development> <http://www.pmbservices.fr/Dataset/#CataAutoDev> .
+	
+	
+	
+	
+	<http://www.pmbservices.fr/Dataset/#VacARenou.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Holidays> .
+	<http://www.pmbservices.fr/Dataset/#VacARenou.1> <http://www.pmbservices.fr/Property/holidaysStart> "2017-05-02" .
+	<http://www.pmbservices.fr/Dataset/#VacARenou.1> <http://www.pmbservices.fr/Property/holidaysEnd> "2017-05-05" .
+	<http://www.pmbservices.fr/Dataset/#VacARenou.1> <http://www.pmbservices.fr/Property/holidaysReason> "Le pont d'Avignon au moi de Mai" .
+	
+	<http://www.pmbservices.fr/Dataset/#VacARenou.2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Holidays> .
+	<http://www.pmbservices.fr/Dataset/#VacARenou.2> <http://www.pmbservices.fr/Property/holidaysStart> "2017-05-02" .
+	<http://www.pmbservices.fr/Dataset/#VacARenou.2> <http://www.pmbservices.fr/Property/holidaysEnd> "2017-05-05" .
+	<http://www.pmbservices.fr/Dataset/#VacARenou.2> <http://www.pmbservices.fr/Property/holidaysReason> "Jean-Marc President !" .
+	
+	<http://www.pmbservices.fr/Dataset/#VacAPetithomme.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/Holidays> .
+	<http://www.pmbservices.fr/Dataset/#VacAPetithomme.1> <http://www.pmbservices.fr/Property/holidaysStart> "2017-05-09" .
+	<http://www.pmbservices.fr/Dataset/#VacAPetithomme.1> <http://www.pmbservices.fr/Property/holidaysEnd> "2017-05-12" .
+	<http://www.pmbservices.fr/Dataset/#VacAPetithomme.1> <http://www.pmbservices.fr/Property/holidaysReason> "Le pont d'Avignon au mois de Mai" .
+	
+	
+	
+	
+	<http://www.pmbservices.fr/Dataset/#PhpAPetithomme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/SkillEfficiency> .
+	<http://www.pmbservices.fr/Dataset/#PhpAPetithomme> <http://www.pmbservices.fr/Property/skill> <http://www.pmbservices.fr/Dataset/#PHP> .
+	<http://www.pmbservices.fr/Dataset/#PhpAPetithomme> <http://www.pmbservices.fr/Property/skillEfficiency> "0.85" .
+	
+	<http://www.pmbservices.fr/Dataset/#ScrumAPetithomme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/SkillEfficiency> .
+	<http://www.pmbservices.fr/Dataset/#ScrumAPetithomme> <http://www.pmbservices.fr/Property/skill> <http://www.pmbservices.fr/Dataset/#Scrum> .
+	<http://www.pmbservices.fr/Dataset/#ScrumAPetithomme> <http://www.pmbservices.fr/Property/skillEfficiency> "1" .
+	
+	<http://www.pmbservices.fr/Dataset/#PhpARenou> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/SkillEfficiency> .
+	<http://www.pmbservices.fr/Dataset/#PhpARenou> <http://www.pmbservices.fr/Property/skill> <http://www.pmbservices.fr/Dataset/#PHP> .
+	<http://www.pmbservices.fr/Dataset/#PhpARenou> <http://www.pmbservices.fr/Property/skillEfficiency> "0.90" .
+	
+	<http://www.pmbservices.fr/Dataset/#PhpDGoron> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/SkillEfficiency> .
+	<http://www.pmbservices.fr/Dataset/#PhpDGoron> <http://www.pmbservices.fr/Property/skill> <http://www.pmbservices.fr/Dataset/#PHP> .
+	<http://www.pmbservices.fr/Dataset/#PhpDGoron> <http://www.pmbservices.fr/Property/skillEfficiency> "0.87" .
+	
+	<http://www.pmbservices.fr/Dataset/#PhpVTouchard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/SkillEfficiency> .
+	<http://www.pmbservices.fr/Dataset/#PhpVTouchard> <http://www.pmbservices.fr/Property/skill> <http://www.pmbservices.fr/Dataset/#PHP> .
+	<http://www.pmbservices.fr/Dataset/#PhpVTouchard> <http://www.pmbservices.fr/Property/skillEfficiency> "0.75" .
+	
+	<http://www.pmbservices.fr/Dataset/#PhpTSamson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/SkillEfficiency> .
+	<http://www.pmbservices.fr/Dataset/#PhpTSamson> <http://www.pmbservices.fr/Property/skill> <http://www.pmbservices.fr/Dataset/#PHP> .
+	<http://www.pmbservices.fr/Dataset/#PhpTSamson> <http://www.pmbservices.fr/Property/skillEfficiency> "0.88" .
+	
+	<http://www.pmbservices.fr/Dataset/#PhpNGantier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/SkillEfficiency> .
+	<http://www.pmbservices.fr/Dataset/#PhpNGantier> <http://www.pmbservices.fr/Property/skill> <http://www.pmbservices.fr/Dataset/#PHP> .
+	<http://www.pmbservices.fr/Dataset/#PhpNGantier> <http://www.pmbservices.fr/Property/skillEfficiency> "0.80" .
+	
+	<http://www.pmbservices.fr/Dataset/#SqlARenou> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/SkillEfficiency> .
+	<http://www.pmbservices.fr/Dataset/#SqlARenou> <http://www.pmbservices.fr/Property/skill> <http://www.pmbservices.fr/Dataset/#SQL> .
+	<http://www.pmbservices.fr/Dataset/#SqlARenou> <http://www.pmbservices.fr/Property/skillEfficiency> "0.86" .
+	
+	<http://www.pmbservices.fr/Dataset/#SqlTSamson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/SkillEfficiency> .
+	<http://www.pmbservices.fr/Dataset/#SqlTSamson> <http://www.pmbservices.fr/Property/skill> <http://www.pmbservices.fr/Dataset/#SQL> .
+	<http://www.pmbservices.fr/Dataset/#SqlTSamson> <http://www.pmbservices.fr/Property/skillEfficiency> "0.80" .
+	
+	<http://www.pmbservices.fr/Dataset/#SqlAPetithomme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/SkillEfficiency> .
+	<http://www.pmbservices.fr/Dataset/#SqlAPetithomme> <http://www.pmbservices.fr/Property/skill> <http://www.pmbservices.fr/Dataset/#SQL> .
+	<http://www.pmbservices.fr/Dataset/#SqlAPetithomme> <http://www.pmbservices.fr/Property/skillEfficiency> "0.85" .
+	
+	<http://www.pmbservices.fr/Dataset/#SqlVTouchard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/SkillEfficiency> .
+	<http://www.pmbservices.fr/Dataset/#SqlVTouchard> <http://www.pmbservices.fr/Property/skill> <http://www.pmbservices.fr/Dataset/#SQL> .
+	<http://www.pmbservices.fr/Dataset/#SqlVTouchard> <http://www.pmbservices.fr/Property/skillEfficiency> "0.79" .
+	
+	<http://www.pmbservices.fr/Dataset/#SqlDGoron> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/SkillEfficiency> .
+	<http://www.pmbservices.fr/Dataset/#SqlDGoron> <http://www.pmbservices.fr/Property/skill> <http://www.pmbservices.fr/Dataset/#SQL> .
+	<http://www.pmbservices.fr/Dataset/#SqlDGoron> <http://www.pmbservices.fr/Property/skillEfficiency> "0.82" .
+	
+	<http://www.pmbservices.fr/Dataset/#SqlNGantier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/SkillEfficiency> .
+	<http://www.pmbservices.fr/Dataset/#SqlNGantier> <http://www.pmbservices.fr/Property/skill> <http://www.pmbservices.fr/Dataset/#SQL> .
+	<http://www.pmbservices.fr/Dataset/#SqlNGantier> <http://www.pmbservices.fr/Property/skillEfficiency> "0.77" .
+	
+	<http://www.pmbservices.fr/Dataset/#SparqlARenou> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/SkillEfficiency> .
+	<http://www.pmbservices.fr/Dataset/#SparqlARenou> <http://www.pmbservices.fr/Property/skill> <http://www.pmbservices.fr/Dataset/#SPARQL> .
+	<http://www.pmbservices.fr/Dataset/#SparqlARenou> <http://www.pmbservices.fr/Property/skillEfficiency> "0.84" .
+	
+	<http://www.pmbservices.fr/Dataset/#SparqlVTouchard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.pmbservices.fr/Entity/SkillEfficiency> .
+	<http://www.pmbservices.fr/Dataset/#SparqlVTouchard> <http://www.pmbservices.fr/Property/skill> <http://www.pmbservices.fr/Dataset/#SPARQL> .
+	<http://www.pmbservices.fr/Dataset/#SparqlVTouchard> <http://www.pmbservices.fr/Property/skillEfficiency> "0.73" .
+}

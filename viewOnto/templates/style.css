@@ -1,0 +1,25 @@
+@CHARSET "UTF-8";
+body {
+	font-family: Helvetica, sans-serif;
+}
+
+.tree {
+	position: absolute;
+	
+}
+
+.content {
+	position: relative;
+	left: 15%;
+	width: 50%;
+}
+
+.retour {
+	position: absolute;
+	top: 500px;
+	margin-left: 15%;
+}
+
+.selected {
+	background-color: red;
+}

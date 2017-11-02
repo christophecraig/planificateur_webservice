@@ -1,0 +1,13 @@
+{% block link %}
+<ul>
+	{% for link in Links %}
+		<li><a href="?dataset=true&amp;value={{link}}">{{link}}</a></li>
+	{% endfor %}
+</ul>
+{% endblock %}
+
+{% block data %}
+
+{% endblock %}
+
+{% debug %}

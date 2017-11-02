@@ -1,0 +1,104 @@
+PREFIX pmb: <http://www.pmbservices.com>
+PREFIX pmbE: <http://www.pmbservices.com/Entity>
+PREFIX pmbP: <http://www.pmbservices.com/Property>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+INSERT INTO pmb:ontoMacroPlan {
+	pmbE:AffecterDevPaire rdf:type rdfs:Class .
+	pmbE:AffecterDevRes rdf:type rdfs:Class .
+	pmbE:AvoirEtatEspritCli rdf:type rdfs:Class .
+	pmbE:AvoirEtatEspritRes rdf:type rdfs:Class .
+	pmbE:Client rdf:type rdfs:Class .
+	pmbE:Competence rdf:type rdfs:Class .
+	pmbE:Developpement rdf:type rdfs:Class .
+	pmbE:EfficaciteCompRes rdf:type rdfs:Class .
+	pmbE:EtatEsprit rdf:type rdfs:Class .
+	pmbE:Pairs rdf:type rdfs:Class .
+	pmbE:Priorite rdf:type rdfs:Class .
+	pmbE:Projet rdf:type rdfs:Class .
+	pmbE:Requiert rdf:type rdfs:Class .
+	pmbE:Ressource rdf:type rdfs:Class .
+	pmbP:client rdfs:domain pmbE:AvoirEtatEspritCli .
+	pmbP:client rdfs:range pmbE:Client .
+	pmbP:client rdf:type rdf:Property .
+	pmbP:competence rdfs:domain pmbE:EfficaciteCompRes .
+	pmbP:competence rdfs:domain pmbE:Requiert .
+	pmbP:competence rdfs:range pmbE:Competence .
+	pmbP:competence rdf:type rdf:Property .
+	pmbP:developpement rdfs:domain pmbE:AffecterDevPaire .
+	pmbP:developpement rdfs:domain pmbE:AffecterDevRes .
+	pmbP:developpement rdfs:domain pmbE:Developpement .
+	pmbP:developpement rdfs:domain pmbE:Requiert .
+	pmbP:developpement rdfs:range pmbE:Developpement .
+	pmbP:developpement rdf:type rdf:Property .
+	pmbP:etatEsprit rdfs:domain pmbE:AvoirEtatEspritCli .
+	pmbP:etatEsprit rdfs:domain pmbE:AvoirEtatEspritRes .
+	pmbP:etatEsprit rdfs:range pmbE:EtatEsprit .
+	pmbP:etatEsprit rdf:type rdf:Property .
+	pmbP:etatEspritDev rdfs:domain pmbE:Projet .
+	pmbP:etatEspritDev rdfs:range pmbE:EtatEsprit .
+	pmbP:etatEspritDev rdf:type rdf:Property .
+	pmbP:paire rdfs:domain pmbE:AffecterDevPaire .
+	pmbP:paire rdfs:range pmbE:Pairs .
+	pmbP:paire rdf:type rdf:Property .
+	pmbP:priorite rdfs:domain pmbE:Developpement .
+	pmbP:priorite rdfs:domain pmbE:Projet .
+	pmbP:priorite rdfs:range pmbE:Priorite .
+	pmbP:priorite rdf:type rdf:Property .
+	pmbP:projet rdfs:domain pmbE:AvoirEtatEspritCli .
+	pmbP:projet rdfs:domain pmbE:Developpement .
+	pmbP:projet rdfs:domain pmbE:Priorite .
+	pmbP:projet rdfs:range pmbE:Projet .
+	pmbP:projet rdf:type rdf:Property .
+	pmbP:ressource rdfs:domain pmbE:AffecterDevRes .
+	pmbP:ressource rdfs:domain pmbE:AvoirEtatEspritRes .
+	pmbP:ressource rdfs:domain pmbE:EfficaciteCompRes .
+	pmbP:ressource rdfs:domain pmbE:Pairs .
+	pmbP:ressource rdfs:range pmbE:Ressource .
+	pmbP:ressource rdf:type rdf:Property .
+	pmbP:coefficientRessource rdfs:domain pmbE:AvoirEtatEspritRes .
+	pmbP:coefficientRessource rdf:type rdf:Property .
+	pmbP:debutReel rdfs:domain pmbE:Developpement .
+	pmbP:debutReel rdf:type rdf:Property .
+	pmbP:debutTard rdfs:domain pmbE:Developpement .
+	pmbP:debutTard rdf:type rdf:Property .
+	pmbP:debutTot rdfs:domain pmbE:Developpement .
+	pmbP:debutTot rdf:type rdf:Property .
+	pmbP:developpementOptionnel rdfs:domain pmbE:Developpement .
+	pmbP:developpementOptionnel rdf:type rdf:Property .
+	pmbP:dureeDeveloppement rdfs:domain pmbE:Developpement .
+	pmbP:dureeDeveloppement rdf:type rdf:Property .
+	pmbP:efficaciteCompetence rdfs:domain pmbE:EfficaciteCompRes .
+	pmbP:efficaciteCompetence rdf:type rdf:Property .
+	pmbP:efficaciteMoyenne rdfs:domain pmbE:Ressource .
+	pmbP:efficaciteMoyenne rdf:type rdf:Property .
+	pmbP:effortDeveloppement rdfs:domain pmbE:Developpement .
+	pmbP:effortDeveloppement rdf:type rdf:Property .
+	pmbP:finReelle rdfs:domain pmbE:Developpement .
+	pmbP:finReelle rdf:type rdf:Property .
+	pmbP:finTard rdfs:domain pmbE:Developpement .
+	pmbP:finTard rdf:type rdf:Property .
+	pmbP:finTot rdfs:domain pmbE:Developpement .
+	pmbP:finTot rdf:type rdf:Property .
+	pmbP:indisponibiliteRessource rdfs:domain pmbE:Ressource .
+	pmbP:indisponibiliteRessource rdfs:range rdfs:Literal .
+	pmbP:indisponibiliteRessource rdf:type rdf:Property .
+	pmbP:libelle rdfs:domain pmbE:Competence .
+	pmbP:libelle rdfs:domain pmbE:Developpement .
+	pmbP:libelle rdfs:domain pmbE:EtatEsprit .
+	pmbP:libelle rdfs:domain pmbE:Priorite .
+	pmbP:libelle rdfs:domain pmbE:Projet .
+	pmbP:libelle rdfs:range rdfs:Literal .
+	pmbP:libelle rdf:type rdf:Property .
+	pmbP:nom rdfs:domain pmbE:Client .
+	pmbP:nom rdfs:domain pmbE:Ressource .
+	pmbP:nom rdfs:range rdfs:Literal .
+	pmbP:nom rdf:type rdf:Property .
+	pmbP:prenom rdfs:domain pmbE:Client .
+	pmbP:prenom rdfs:domain pmbE:Ressource .
+	pmbP:prenom rdfs:range rdfs:Literal .
+	pmbP:prenom rdf:type rdf:Property .
+	pmbP:statutDeveloppement rdfs:domain pmbE:Developpement .
+	pmbP:statutDeveloppement rdf:type rdf:Property
+}
