@@ -17,18 +17,20 @@ $projet = $dc->getDetailedProject("IIMPro");
 $dev = $dc->getDetailedDevelopment($projet['developments'][array_search("IIMDev.1", $projet['developments'])]);
 
 $resources = array();
-$r = $dc->getResourcesWithSkill("PHP");
+$r = $dc->getResources();
 $i = 0;
 foreach ($r as $ru) {
 	$resources[$ru['id']] = $dc->getAResource($ru['id']);
 	$i++;
+	// A quoi sert ce compteur ?
 }
 // $nbRes = 2;
 // var_dump($resources);
 
-echo '<pre>';
-var_dump($dc->getResources());
-echo '</pre>';
+// echo '<h2>Projets</h2>';
+// echo '<pre>';
+// var_dump($dc->getProjects());
+// echo '</pre>';
 
 
 // $result = TaskCalculator::calculateAverage($dev, TaskSelector::takeBestResourcesAverage($resources, 4));
@@ -42,12 +44,6 @@ echo '</pre>';
 // print "<br>D&eacute;but le ".date("Y-m-d", strtotime($dev["plannedStart"]));
 // print "<br>Dur&eacute;e : ".date("z", $result)." jours";
 // print "<br>Fin le ".date("Y-m-d", $result + strtotime($dev["plannedStart"]));
-
-
-
-
-
-
 
 
 
@@ -68,37 +64,33 @@ print "<br>Dur&eacute;e : ".date("z", $result)." jours";
 print "<br>Fin le ".date("Y-m-d", $result + strtotime($dev["plannedStart"]));*/
 
 
+echo '<h2>Ressources</h2>';
+// $resources = $dc->getResources();
+echo '<pre>';
+var_dump($resources);
+echo '</pre>';
+
+// echo '<h2>Développement</h2>';
+// echo '<pre>';
+// var_dump($dev);
+// echo '</pre>';
 
 
+// print "<br>";
+// if (TaskCalculator::isHolidays($dev, $resources["VTouchard"])) {
+// 	echo "C'est les vacances";
+// } else {
+// 	echo "C'est bon !";
+// }
 
 
-print "<br>";
-if (TaskCalculator::isHolidays($dev, $resources["ARenou"])) {
-	print "C'est les vacances";
-} else {
-	print "C'est bon !";
-}
-
-
-
-
-
-
-
-
-
-
-
+echo (TaskCalculator::calculateAverage($dev, $resources)/ (24*60*60)); // ? 259200 secondes = 3 j ? ???
 
 // Demo heap sort
-//var_dump(TaskSelector::take2BestResources($resources));
-//var_dump(TaskSelector::take2WorstResources($resources));
+// var_dump(TaskSelector::take2BestResources($resources));
+// var_dump(TaskSelector::take2WorstResources($resources));
+
+// Les deux fonctions ci-dessus n'existent pas.
 
 
 
-
-
-
-
-//print_r($dc->getHolidays("VacARenou.1"));
-//var_dump($dc->getAMind($dc->getACustomerMind($projet['customer'])['mind']));

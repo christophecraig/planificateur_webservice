@@ -1,12 +1,12 @@
 <?php 
 include 'connect_sparql.php';
 include 'lib/JSON/jsonRPCServer.php';
-include 'viewOnto/classes/dataset/models/Priorite.class.php';
+include 'viewOnto/classes/dataset/models/Priority.class.php';
 
 $JsonServer = new jsonRPCServer();
 
-$prio1 = new Priorite("Plop", 100);
-$prio2 = new Priorite("popol", 1);
+$prio1 = new Priority("Plop", 100);
+$prio2 = new Priority("popol", 1);
 
 $_SERVER['CONTENT_TYPE'] = 'application/json';
 if (isset($_POST['id'])) {

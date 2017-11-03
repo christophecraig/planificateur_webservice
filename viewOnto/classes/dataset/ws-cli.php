@@ -19,7 +19,7 @@ require_once 'jsonRPCClient.php';
 require_once 'Factory.class.php';
 require_once 'connectors/DataRequest.class.php';
 
-$client = new jsonRPCClient("http://192.168.0.80/~mbeacco/macro_planning/viewOnto/classes/dataset/ws-serv.php", true);
+$client = new jsonRPCClient("http://192.168.0.50/~ccraig/macro_planning/viewOnto/classes/dataset/ws-serv.php", true);
 
 echo '<pre>';
 print_r($client);

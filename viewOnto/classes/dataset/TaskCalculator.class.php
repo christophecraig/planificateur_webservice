@@ -13,7 +13,10 @@ class TaskCalculator {
 	 * Instance an new DataController
 	 */
 	private static function getController() {
-		self::$dc = new DataController(new DataRequest());
+	    if (!isset(self::$dc)) {
+		  self::$dc = new DataController(new DataRequest());
+	    }
+	    return self::$dc;
 	}
 	
 	/**
@@ -58,14 +61,17 @@ class TaskCalculator {
 	 * @param array $res
 	 * @return boolean
 	 */
+	
 	public static function isHolidays($dev, $res) {
-		$date = array("real", "planned", "early", "late");
-		
+	    
+        // Pourquoi y a-t-il besoin de passer un développement en paramètre de la fonction permettant de dire si une ressource est en vacances ou non ???
+        
+		$date = array("real", "planned", "early", "late");		
 		foreach ($date as $d) {
 			if (isset($dev[$d."Start"]) && isset($dev[$d."End"])) {
-				
+			    
 				for ($i = 0; $i < sizeof($res['holidays']); $i++) {
-					$vac = self::$dc->getHolidays($res['holidays'][$i]);
+					$vac = self::getController()->getHolidays($res['holidays'][$i]);
 					if (strtotime($vac['beginning']) < strtotime($dev[$d."Start"])) {
 						if (strtotime($vac['ending']) < strtotime($dev[$d."Start"])) {
 							continue;
@@ -93,9 +99,6 @@ class TaskCalculator {
 	 * @return boolean|number
 	 */
 	public static function calculateAverage($dev, $arrayRes) {
-		if (!isset(self::$dc)) {
-			self::getController();
-		}
 		
 		$moy = 0;
 		$cpt = 0;
@@ -135,18 +138,15 @@ class TaskCalculator {
 	 * @return boolean|number
 	 */
 	public static function calculateWithSkillAverage($arraySkill, $dev, $arrayRes) {
-		if (!isset(self::$dc)) {
-			self::getController();
-		}
 		
 		$moy = 0;
 		$complete = 0;
 		
 		for ($i = 0; $i < sizeof($arrayRes); $i++) {
 			for ($j = 0; $j < sizeof($arrayRes[$i]['skillEfficiency']); $j++) {
-				if (array_search(self::$dc->getSkillEfficiency($arrayRes[$i]['skillEfficiency'][$j])['skill'], $arraySkill) !== false) {
+				if (array_search(self::getController()->getSkillEfficiency($arrayRes[$i]['skillEfficiency'][$j])['skill'], $arraySkill) !== false) {
 					$complete++;
-					$moy += self::$dc->getSkillEfficiency($arrayRes[$i]['skillEfficiency'][$j])['efficiency'];
+					$moy += self::getController()->getSkillEfficiency($arrayRes[$i]['skillEfficiency'][$j])['efficiency'];
 				}
 			}
 		}
